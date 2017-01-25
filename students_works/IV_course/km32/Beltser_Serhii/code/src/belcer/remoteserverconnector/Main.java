@@ -4,6 +4,7 @@ import belcer.remoteserverconnector.controller.AdminController;
 import belcer.remoteserverconnector.controller.AppWindows;
 import belcer.remoteserverconnector.controller.CmpController;
 import belcer.remoteserverconnector.controller.FrontController;
+import belcer.remoteserverconnector.model.CustomPrintStream;
 import belcer.remoteserverconnector.model.dao.RoleDao;
 import belcer.remoteserverconnector.model.dao.UserDao;
 import belcer.remoteserverconnector.model.dao.oracle_impl.RoleDaoImpl;
@@ -37,8 +38,8 @@ public class Main extends Application {
     private FXMLLoader loader;
     private FrontController frontController;
 
-    static final String ADMIN_USERNAME = "admin";
-    static final String ADMIN_PASSWORD = "admin";
+    private static final String ADMIN_USERNAME = "admin";
+    private static final String ADMIN_PASSWORD = "admin";
 
     @Override
     public void start(Stage primaryStage) {
@@ -51,6 +52,7 @@ public class Main extends Application {
         Object controller = loader.getController();
         if (controller instanceof FrontController) {
             frontController = (FrontController) controller;
+//            frontController.setPrintStream(new CustomPrintStream(frontController));
         }
         new Thread(() -> {
             RoleDao roleDao = new RoleDaoImpl();
@@ -89,7 +91,12 @@ public class Main extends Application {
             }
             System.out.println(builder);
         }).start();
-
+        new Thread(() -> {
+            if (DEBUG_MODE) {
+                UserDao userDao = new UserDaoImpl();
+                FrontController.setUser(userDao.get("admin"));
+            }
+        }).start();
     }
 
     public static void main(String[] args) {
@@ -134,6 +141,7 @@ public class Main extends Application {
                 mainStage.setTitle(title);
                 mainStage.setScene(new Scene(initWindow(rootResource)));
                 mainStage.show();
+                closeAdditionalWindow();
             } else {
                 if (stage != null && stage.isShowing()) {
                     stage.close();

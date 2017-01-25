@@ -1,6 +1,7 @@
 package belcer.remoteserverconnector.controller;
 
 import belcer.remoteserverconnector.Main;
+import belcer.remoteserverconnector.model.CustomPrintStream;
 import belcer.remoteserverconnector.model.entity.ConnectionProfile;
 import belcer.remoteserverconnector.model.entity.Role;
 import belcer.remoteserverconnector.model.entity.User;
@@ -11,6 +12,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class FrontController {
+
+    private CustomPrintStream printStream;
     @FXML
     private TextField connectionTitle;
     @FXML
@@ -111,5 +114,20 @@ public class FrontController {
                 adminButton.setDisable(false);
             }
         }
+    }
+    public void consolePrint() {
+//        System.out.println("FrontController.consolePrint");
+        if (log != null && printStream != null) {
+            String msgs = printStream.getMsgs();
+            log.setText(msgs);
+        }
+    }
+
+    public CustomPrintStream getPrintStream() {
+        return printStream;
+    }
+
+    public void setPrintStream(CustomPrintStream printStream) {
+        this.printStream = printStream;
     }
 }

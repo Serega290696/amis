@@ -17,13 +17,15 @@ import java.util.List;
 public class OracleConnector {
 //    INSTANCE,;
 
-    private final static String HOST = "77.47.134.131";
+    private final static String HOST = "localhost";
+//    private final static String HOST = "77.47.134.131";
     private final static String PORT = "1521";
-    private final static String SCHEMA = "xe";
+    private final static String SCHEMA = "orcl";
+//    private final static String SCHEMA = "xe";
     private final static String URL_SCHEMA = "jdbc:oracle:thin:@%1$s:%2$s/%3$s";
-    private final static String USER_LOGIN = "sbeltser";
+    private final static String USER_LOGIN = "system";
     private final static String USER_PASS = "root";
-    private Connection conn;
+//    private Connection conn;
 
     private static final String usersTable = "\"app_user\"";
     private static final String connectionsTable = "\"app_connection_profile\"";
@@ -32,19 +34,24 @@ public class OracleConnector {
 
     public Connection open() {
         System.out.println("Try open connection. . .");
-        try {
-            if (conn != null && !conn.isClosed()) {
-                conn.close();
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+        Connection conn = null;
         try {
             conn = createConnection();
         } catch (SQLException | ClassNotFoundException | NamingException e) {
             e.printStackTrace();
         }
         return conn;
+    }
+
+    public void close(Connection conn) {
+        try {
+            if (conn != null && !conn.isClosed()) {
+                conn.close();
+            }
+            System.out.println("Connection is closed.");
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 
     public Connection createConnection() throws SQLException, ClassNotFoundException, NamingException {
@@ -56,7 +63,7 @@ public class OracleConnector {
 
     // Users
     public User getUser(String username) {
-        conn = open();
+        Connection conn = open();
         PreparedStatement ins;
         User user = null;
         try {
@@ -79,15 +86,17 @@ public class OracleConnector {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            close();
+            close(conn);
         }
         return user;
     }
 
     public void saveUser(User user) {
-        conn = open();
+        Connection conn = open();
         PreparedStatement ins;
         try {
+            conn.setTransactionIsolation(Connection.TRANSACTION_SERIALIZABLE);
+            conn.setAutoCommit(false);
             ins = conn.prepareStatement(
                     "INSERT INTO " + usersTable + " (\"username\", \"email\"," +
                             " \"password\", \"registration_date\", \"last_login\", \"role_title\") " +
@@ -99,26 +108,16 @@ public class OracleConnector {
             ins.setTimestamp(5, user.getLastLogin());
             ins.setString(6, user.getRole().toString());
             ins.executeQuery();
+            conn.commit();
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            close();
+            close(conn);
         }
-    }
-
-    public void close() {
-        try {
-            if (conn != null && !conn.isClosed()) {
-                conn.close();
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        System.out.println("Connection is closed.");
     }
 
     public List<User> getAllUsers() throws Exception {
-        conn = open();
+        Connection conn = open();
         if (conn == null) {
             throw new Exception("Connection is failed");
         }
@@ -145,13 +144,13 @@ public class OracleConnector {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            close();
+            close(conn);
         }
         return users;
     }
 
     public User updateUser(String username, User user) {
-        conn = open();
+        Connection conn = open();
         System.out.println("OracleConnector.updateUser: " + user);
         PreparedStatement ins;
         try {
@@ -179,7 +178,7 @@ public class OracleConnector {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            close();
+            close(conn);
         }
         return user;
     }
@@ -187,7 +186,7 @@ public class OracleConnector {
     // Connections
     public List<ConnectionProfile> getConnections(String username) {
         System.out.println("---OracleConnector.getConnections");
-        conn = open();
+        Connection conn = open();
         PreparedStatement ins;
         List<ConnectionProfile> connections = new ArrayList<>();
         try {
@@ -227,14 +226,14 @@ public class OracleConnector {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            close();
+            close(conn);
         }
         System.out.println("---connections = " + connections);
         return connections;
     }
 
     public ConnectionProfile getConnection(String title, String username) {
-        conn = open();
+        Connection conn = open();
         PreparedStatement ins;
         ConnectionProfile connection = null;
         try {
@@ -269,13 +268,13 @@ public class OracleConnector {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            close();
+            close(conn);
         }
         return connection;
     }
 
     public List<ConnectionProfile> getAllConnections() {
-        conn = open();
+        Connection conn = open();
         PreparedStatement ins;
         List<ConnectionProfile> connections = new ArrayList<>();
         try {
@@ -303,13 +302,13 @@ public class OracleConnector {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            close();
+            close(conn);
         }
         return connections;
     }
 
     public void deleteConnection(String username, String title) {
-        conn = open();
+        Connection conn = open();
         PreparedStatement ins;
         try {
             ins = conn.prepareStatement("DELETE FROM " + connectionsTable + " WHERE \"username\"=? AND \"title\" = ?");
@@ -319,12 +318,12 @@ public class OracleConnector {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            close();
+            close(conn);
         }
     }
 
     public void deleteUser(String username) {
-        conn = open();
+        Connection conn = open();
         PreparedStatement ins;
         try {
             ins = conn.prepareStatement("DELETE FROM " + usersTable + " WHERE \"username\"=?");
@@ -333,12 +332,12 @@ public class OracleConnector {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            close();
+            close(conn);
         }
     }
 
     public void deleteConnectionProfile(String title, String username) {
-        conn = open();
+        Connection conn = open();
         PreparedStatement ins;
         try {
             ins = conn.prepareStatement("DELETE FROM " + connectionsTable + " WHERE \"username\"=? AND \"title\"=?");
@@ -348,12 +347,12 @@ public class OracleConnector {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            close();
+            close(conn);
         }
     }
 
     public void saveConnection(ConnectionProfile connectionProfile) {
-        conn = open();
+        Connection conn = open();
         PreparedStatement ins;
         try {
             ins = conn.prepareStatement(
@@ -379,12 +378,12 @@ public class OracleConnector {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            close();
+            close(conn);
         }
     }
 
     public void updateConnection(ConnectionProfile connectionProfile) {
-        conn = open();
+        Connection conn = open();
         PreparedStatement ins;
         try {
 //      "title", "connection_password", "connection_user", "port", "host", "protocol", " +
@@ -425,12 +424,12 @@ public class OracleConnector {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            close();
+            close(conn);
         }
     }
 
     public void saveRole(Role role) {
-        conn = open();
+        Connection conn = open();
         PreparedStatement ins;
         try {
             ins = conn.prepareStatement(
@@ -441,12 +440,12 @@ public class OracleConnector {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            close();
+            close(conn);
         }
     }
 
     public List<Role> getAllRoles() {
-        conn = open();
+        Connection conn = open();
         PreparedStatement ins;
         List<Role> roles = new ArrayList<>();
         try {
@@ -462,7 +461,7 @@ public class OracleConnector {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            close();
+            close(conn);
         }
         return roles;
     }

@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
@@ -8,8 +12,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
-<Pane maxHeight="284.0" maxWidth="312.0" minHeight="160.0" minWidth="280.0" prefHeight="284.0" prefWidth="312.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="belcer.remoteserverconnector.controller.RegistrationController">
+<Pane maxHeight="284.0" maxWidth="312.0" minHeight="160.0" minWidth="280.0" prefHeight="284.0" prefWidth="312.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="belcer.remoteserverconnector.controller.RegistrationController">
    <children>
       <Button defaultButton="true" layoutX="103.0" layoutY="217.0" mnemonicParsing="false" onAction="#register" prefHeight="34.0" prefWidth="102.0" text="Sign up" />
       <VBox layoutX="14.0" layoutY="-1.0" prefHeight="208.0" prefWidth="280.0">
@@ -54,6 +57,7 @@
                   <TextField fx:id="regEmail" prefHeight="25.0" prefWidth="170.0" promptText="your email" />
                </children>
             </HBox>
+            <Label fx:id="errorLabel" prefHeight="17.0" prefWidth="279.0" textFill="#a40000" />
          </children>
       </VBox>
    </children>

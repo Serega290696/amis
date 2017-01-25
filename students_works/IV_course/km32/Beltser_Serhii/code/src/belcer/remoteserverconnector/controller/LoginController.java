@@ -6,6 +6,7 @@ import belcer.remoteserverconnector.model.dao.oracle_impl.UserDaoImpl;
 import belcer.remoteserverconnector.model.entity.User;
 import belcer.remoteserverconnector.model.utils.Utils;
 import javafx.fxml.FXML;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import org.apache.ftpserver.command.impl.SYST;
 
@@ -19,6 +20,8 @@ public class LoginController {
     private TextField loginUsername;
     @FXML
     private TextField loginPassword;
+    @FXML
+    private Label errorLabel;
 
     public void login() {
         System.out.println("LoginController.login");
@@ -29,18 +32,23 @@ public class LoginController {
         if (user == null) {
             loginDataCorrect = false;
             System.err.println("Wrong username");
+            errorLabel.setText("Wrong username");
         } else if (user.getBanned() != 0) {
             loginDataCorrect = false;
             System.err.println("User is banned");
+            errorLabel.setText("User is banned");
         } else if (user.getDeleted() != 0) {
             loginDataCorrect = false;
             System.err.println("User is deleted");
+            errorLabel.setText("User is deleted");
         } else if (!Utils.checkPassword(password, user.getPassword())) {
             loginDataCorrect = false;
             System.err.println("Wrong password");
+            errorLabel.setText("Wrong password");
         }
 
         if (loginDataCorrect) {
+            errorLabel.setText("");
             System.out.println("Login success");
             System.out.println("user = " + user);
             user.setLastLogin(new Timestamp(System.currentTimeMillis()));

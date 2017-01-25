@@ -36,7 +36,7 @@ public class AdminController {
         usersTable.setEditable(true);
         TableColumn username = createColumn("Username");
         TableColumn email = createColumn("Email");
-        TableColumn password = createColumn("Password");
+        TableColumn password = createColumn("Password", "password", 0.5d);
         TableColumn registrationDate = createColumn("Registration", "registrationDate", 0.5d);
         TableColumn lastLogin = createColumn("Last login", "lastLogin", 0.5d);
         TableColumn role = createColumn("Role", "role", 0.4);
@@ -49,11 +49,11 @@ public class AdminController {
                 new PropertyValueFactory<User, Byte>("banned"));
 
         usersTable.getColumns().addAll(
-//                username,
-//                email, password,
+                username,
+                email, password,
                 registrationDate
-//                ,
-//                lastLogin, role, deleted, banned
+                ,
+                lastLogin, role, deleted, banned
         );
         usersTable.getSelectionModel().selectedItemProperty().addListener((obs, oldSelection, newSelection) -> {
             if (newSelection != null
@@ -92,7 +92,7 @@ public class AdminController {
 
         new Thread(() ->
                 userDao.update(user)).start();
-//        updateUserList();
+        updateUserList();
     }
 
 
@@ -110,7 +110,6 @@ public class AdminController {
                         FXCollections.observableArrayList(users);
                 usersTable.getItems().removeAll();
                 usersTable.setItems(usersObservableList);
-//                usersTable.setItems(usersObservableList);
             } catch (Exception e) {
                 e.printStackTrace();
             }

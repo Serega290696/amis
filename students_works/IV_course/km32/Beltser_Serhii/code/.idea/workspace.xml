@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b6e31a4-f400-46ab-ac74-7c5ccb791863" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/belcer/remoteserverconnector/model/CustomPrintStream.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../src/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../src/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../src/.idea/src.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../src/.idea/workspace.xml" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../../Andrieieva_Yuliia/welcome.txt" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../../Arsenych_Olha/welcome.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/30fbb4ee-eb03-4180-8829-c2bfa2dac6d5.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/remote_server_connector/belcer/remoteserverconnector/Main$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/remote_server_connector/belcer/remoteserverconnector/Main.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../../Borysiuk_Iryna/welcome.txt" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../../Drabchuk_Denys/welcome.txt" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../../Husieva_Anna/welcome.txt" afterPath="" />
@@ -26,48 +32,26 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/remote_server_connector/belcer/remoteserverconnector/controller/AdminController.class" afterPath="$PROJECT_DIR$/out/production/remote_server_connector/belcer/remoteserverconnector/controller/AdminController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/remote_server_connector/belcer/remoteserverconnector/controller/CmpController.class" afterPath="$PROJECT_DIR$/out/production/remote_server_connector/belcer/remoteserverconnector/controller/CmpController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/remote_server_connector/belcer/remoteserverconnector/controller/LoginController.class" afterPath="$PROJECT_DIR$/out/production/remote_server_connector/belcer/remoteserverconnector/controller/LoginController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/remote_server_connector/belcer/remoteserverconnector/model/dao/oracle_impl/ConnectionProfileDaoOracleImpl.class" afterPath="$PROJECT_DIR$/out/production/remote_server_connector/belcer/remoteserverconnector/model/dao/oracle_impl/ConnectionProfileDaoOracleImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/remote_server_connector/belcer/remoteserverconnector/controller/RegistrationController.class" afterPath="$PROJECT_DIR$/out/production/remote_server_connector/belcer/remoteserverconnector/controller/RegistrationController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/remote_server_connector/belcer/remoteserverconnector/model/dao/oracle_impl/OracleConnector.class" afterPath="$PROJECT_DIR$/out/production/remote_server_connector/belcer/remoteserverconnector/model/dao/oracle_impl/OracleConnector.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/remote_server_connector/belcer/remoteserverconnector/model/entity/User.class" afterPath="$PROJECT_DIR$/out/production/remote_server_connector/belcer/remoteserverconnector/model/entity/User.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/remote_server_connector_jar.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/remote_server_connector_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/1c35b834-e41d-4260-ba18-b2d21cb01169.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/1c35b834-e41d-4260-ba18-b2d21cb01169.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/1c35b834-e41d-4260-ba18-b2d21cb01169/storage.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/1c35b834-e41d-4260-ba18-b2d21cb01169/storage.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/30fbb4ee-eb03-4180-8829-c2bfa2dac6d5/storage.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/30fbb4ee-eb03-4180-8829-c2bfa2dac6d5/storage.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/Serega.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/Serega.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/commons_net_3_5.xml" afterPath="$PROJECT_DIR$/.idea/libraries/commons_net_3_5.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/ftplet_api_1_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/ftplet_api_1_1_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/ftpserver_core_1_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/ftpserver_core_1_1_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/jbcrypt_0_3m.xml" afterPath="$PROJECT_DIR$/.idea/libraries/jbcrypt_0_3m.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/ojdbc6.xml" afterPath="$PROJECT_DIR$/.idea/libraries/ojdbc6.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/remote_server_connector/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/out/production/remote_server_connector/META-INF/MANIFEST.MF" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/remote_server_connector/fxml/admin.fxml" afterPath="$PROJECT_DIR$/out/production/remote_server_connector/fxml/admin.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/remote_server_connector/fxml/cmp.fxml" afterPath="$PROJECT_DIR$/out/production/remote_server_connector/fxml/cmp.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/remote_server_connector/fxml/login.fxml" afterPath="$PROJECT_DIR$/out/production/remote_server_connector/fxml/login.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/remote_server_connector/fxml/main.fxml" afterPath="$PROJECT_DIR$/out/production/remote_server_connector/fxml/main.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/remote_server_connector/fxml/signup.fxml" afterPath="$PROJECT_DIR$/out/production/remote_server_connector/fxml/signup.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/fxml/admin.fxml" afterPath="$PROJECT_DIR$/resources/fxml/admin.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/fxml/cmp.fxml" afterPath="$PROJECT_DIR$/resources/fxml/cmp.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/fxml/login.fxml" afterPath="$PROJECT_DIR$/resources/fxml/login.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/fxml/main.fxml" afterPath="$PROJECT_DIR$/resources/fxml/main.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/fxml/signup.fxml" afterPath="$PROJECT_DIR$/resources/fxml/signup.fxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/belcer/remoteserverconnector/Main.java" afterPath="$PROJECT_DIR$/src/belcer/remoteserverconnector/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/belcer/remoteserverconnector/controller/AdminController.java" afterPath="$PROJECT_DIR$/src/belcer/remoteserverconnector/controller/AdminController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/belcer/remoteserverconnector/controller/AppWindows.java" afterPath="$PROJECT_DIR$/src/belcer/remoteserverconnector/controller/AppWindows.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/belcer/remoteserverconnector/controller/CmpController.java" afterPath="$PROJECT_DIR$/src/belcer/remoteserverconnector/controller/CmpController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/belcer/remoteserverconnector/controller/FrontController.java" afterPath="$PROJECT_DIR$/src/belcer/remoteserverconnector/controller/FrontController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/belcer/remoteserverconnector/controller/LoginController.java" afterPath="$PROJECT_DIR$/src/belcer/remoteserverconnector/controller/LoginController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/belcer/remoteserverconnector/controller/RegistrationController.java" afterPath="$PROJECT_DIR$/src/belcer/remoteserverconnector/controller/RegistrationController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/belcer/remoteserverconnector/model/FtpConnection.java" afterPath="$PROJECT_DIR$/src/belcer/remoteserverconnector/model/FtpConnection.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/belcer/remoteserverconnector/model/TestedFtpServer.java" afterPath="$PROJECT_DIR$/src/belcer/remoteserverconnector/model/TestedFtpServer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/belcer/remoteserverconnector/model/dao/ConnectionProfileDao.java" afterPath="$PROJECT_DIR$/src/belcer/remoteserverconnector/model/dao/ConnectionProfileDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/belcer/remoteserverconnector/model/dao/RoleDao.java" afterPath="$PROJECT_DIR$/src/belcer/remoteserverconnector/model/dao/RoleDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/belcer/remoteserverconnector/model/dao/UserDao.java" afterPath="$PROJECT_DIR$/src/belcer/remoteserverconnector/model/dao/UserDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/belcer/remoteserverconnector/model/dao/oracle_impl/ConnectionProfileDaoOracleImpl.java" afterPath="$PROJECT_DIR$/src/belcer/remoteserverconnector/model/dao/oracle_impl/ConnectionProfileDaoOracleImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/belcer/remoteserverconnector/model/dao/oracle_impl/OracleConnector.java" afterPath="$PROJECT_DIR$/src/belcer/remoteserverconnector/model/dao/oracle_impl/OracleConnector.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/belcer/remoteserverconnector/model/dao/oracle_impl/RoleDaoImpl.java" afterPath="$PROJECT_DIR$/src/belcer/remoteserverconnector/model/dao/oracle_impl/RoleDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/belcer/remoteserverconnector/model/dao/oracle_impl/UserDaoImpl.java" afterPath="$PROJECT_DIR$/src/belcer/remoteserverconnector/model/dao/oracle_impl/UserDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/belcer/remoteserverconnector/model/entity/ConnectionProfile.java" afterPath="$PROJECT_DIR$/src/belcer/remoteserverconnector/model/entity/ConnectionProfile.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/belcer/remoteserverconnector/model/entity/Role.java" afterPath="$PROJECT_DIR$/src/belcer/remoteserverconnector/model/entity/Role.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/belcer/remoteserverconnector/model/entity/User.java" afterPath="$PROJECT_DIR$/src/belcer/remoteserverconnector/model/entity/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/belcer/remoteserverconnector/model/utils/Utils.java" afterPath="$PROJECT_DIR$/src/belcer/remoteserverconnector/model/utils/Utils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/belcer/remoteserverconnector/model/dao/oracle_impl/OracleConnectorTest.java" afterPath="$PROJECT_DIR$/test/belcer/remoteserverconnector/model/dao/oracle_impl/OracleConnectorTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/belcer/remoteserverconnector/model/entity/UserTest.java" afterPath="$PROJECT_DIR$/test/belcer/remoteserverconnector/model/entity/UserTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/belcer/remoteserverconnector/model/utils/UtilsTest.java" afterPath="$PROJECT_DIR$/test/belcer/remoteserverconnector/model/utils/UtilsTest.java" />
     </list>
     <ignored path="remote_server_connector.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -175,141 +159,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AdminController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/belcer/remoteserverconnector/controller/AdminController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="42" column="26" lean-forward="false" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="26" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/belcer/remoteserverconnector/controller/LoginController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="28" column="27" lean-forward="false" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserDaoImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/belcer/remoteserverconnector/model/dao/oracle_impl/UserDaoImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="22" column="31" lean-forward="false" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
-              <folding>
-                <element signature="e#331#332#0" expanded="false" />
-                <element signature="e#375#376#0" expanded="false" />
-                <element signature="e#505#506#0" expanded="false" />
-                <element signature="e#545#546#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OracleConnector.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/belcer/remoteserverconnector/model/dao/oracle_impl/OracleConnector.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2737">
-              <caret line="173" column="28" lean-forward="false" selection-start-line="173" selection-start-column="28" selection-end-line="173" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="CmpController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/belcer/remoteserverconnector/controller/CmpController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="88" column="17" lean-forward="false" selection-start-line="88" selection-start-column="17" selection-end-line="88" selection-end-column="17" />
-              <folding>
-                <element signature="method#cancel#0;class#CmpController#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/belcer/remoteserverconnector/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="48" column="17" lean-forward="false" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="17" />
+            <state relative-caret-position="268">
+              <caret line="193" column="13" lean-forward="true" selection-start-line="193" selection-start-column="13" selection-end-line="193" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConnectionProfileDaoOracleImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/belcer/remoteserverconnector/model/dao/oracle_impl/ConnectionProfileDaoOracleImpl.java">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/belcer/remoteserverconnector/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="51" column="56" lean-forward="false" selection-start-line="51" selection-start-column="56" selection-end-line="51" selection-end-column="56" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#437#438#0" expanded="false" />
-                <element signature="e#494#495#0" expanded="false" />
-                <element signature="e#551#552#0" expanded="false" />
-                <element signature="e#597#598#0" expanded="false" />
-                <element signature="e#664#665#0" expanded="false" />
-                <element signature="e#717#718#0" expanded="false" />
-                <element signature="e#781#782#0" expanded="false" />
-                <element signature="e#827#828#0" expanded="false" />
-                <element signature="e#893#894#0" expanded="false" />
-                <element signature="e#941#942#0" expanded="false" />
-                <element signature="e#1313#1314#0" expanded="false" />
-                <element signature="e#1364#1365#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="378">
+              <caret line="132" column="9" lean-forward="true" selection-start-line="132" selection-start-column="9" selection-end-line="132" selection-end-column="9" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/belcer/remoteserverconnector/model/entity/User.java">
+      <file leaf-file-name="OracleConnector.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/belcer/remoteserverconnector/model/dao/oracle_impl/OracleConnector.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="17" column="81" lean-forward="false" selection-start-line="17" selection-start-column="81" selection-end-line="17" selection-end-column="81" />
+            <state relative-caret-position="161">
+              <caret line="373" column="24" lean-forward="true" selection-start-line="373" selection-start-column="24" selection-end-line="373" selection-end-column="24" />
               <folding>
-                <element signature="e#1596#1597#0" expanded="false" />
-                <element signature="e#1623#1624#0" expanded="false" />
-                <element signature="e#1661#1662#0" expanded="false" />
-                <element signature="e#1693#1694#0" expanded="false" />
-                <element signature="e#1728#1729#0" expanded="false" />
-                <element signature="e#1759#1760#0" expanded="false" />
-                <element signature="e#1807#1808#0" expanded="false" />
-                <element signature="e#1847#1848#0" expanded="false" />
-                <element signature="e#1879#1880#0" expanded="false" />
-                <element signature="e#1907#1908#0" expanded="false" />
-                <element signature="e#1949#1950#0" expanded="false" />
-                <element signature="e#1983#1984#0" expanded="false" />
-                <element signature="e#2018#2019#0" expanded="false" />
-                <element signature="e#2049#2050#0" expanded="false" />
-                <element signature="e#2097#2098#0" expanded="false" />
-                <element signature="e#2137#2138#0" expanded="false" />
-                <element signature="e#2183#2184#0" expanded="false" />
-                <element signature="e#2222#2223#0" expanded="false" />
-                <element signature="e#2289#2290#0" expanded="false" />
-                <element signature="e#2345#2346#0" expanded="false" />
-                <element signature="e#2384#2385#0" expanded="false" />
-                <element signature="e#2416#2417#0" expanded="false" />
-                <element signature="e#2469#2470#0" expanded="false" />
-                <element signature="e#2511#2512#0" expanded="false" />
-                <element signature="e#2543#2544#0" expanded="false" />
-                <element signature="e#2573#2574#0" expanded="false" />
-                <element signature="e#2617#2618#0" expanded="false" />
-                <element signature="e#2655#2656#0" expanded="false" />
-                <element signature="e#2686#2687#0" expanded="false" />
-                <element signature="e#2715#2716#0" expanded="false" />
-                <element signature="e#2757#2758#0" expanded="false" />
-                <element signature="e#2793#2794#0" expanded="false" />
+                <marker date="1485368006444" expanded="true" signature="2552:2771" ph="SELECT \&quot;use... app_user" />
+                <marker date="1485368006444" expanded="true" signature="3795:4013" ph="INSERT INTO &quot;app_user&quot;... " />
+                <marker date="1485368006444" expanded="true" signature="4841:4996" ph="SELECT \&quot;use... app_user" />
+                <marker date="1485368006444" expanded="true" signature="6064:6539" ph="UPDATE &quot;app_... " />
+                <marker date="1485368006444" expanded="true" signature="7481:7761" ph="SELECT \&quot;tit... app_connection_profile" />
+                <marker date="1485368006444" expanded="true" signature="10163:10498" ph="SELECT \&quot;tit... app_connection_profile" />
+                <marker date="1485368006444" expanded="true" signature="12299:12313" ph="SELECT * FRO... app_connection_profile" />
+                <marker date="1485368006444" expanded="true" signature="13634:13709" ph="DELETE FROM " />
+                <marker date="1485368006444" expanded="true" signature="14118:14169" ph="DELETE FROM " />
+                <marker date="1485368006444" expanded="true" signature="14568:14641" ph="DELETE FROM " />
+                <marker date="1485368006444" expanded="true" signature="15095:15504" ph="INSERT INTO &quot;app_connection_profile&quot;... " />
+                <marker date="1485368006444" expanded="true" signature="16932:17702" ph="UPDATE &quot;app_... " />
+                <marker date="1485368006444" expanded="true" signature="18963:19053" ph="INSERT INTO &quot;app_role&quot;... " />
+                <marker date="1485368006444" expanded="true" signature="19474:19488" ph="SELECT * FRO... app_role" />
               </folding>
             </state>
           </provider>
@@ -320,8 +209,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit4 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -329,7 +218,6 @@
     <findStrings>
       <find>&lt;?import javafx.scene.control.CheckBox?&gt; &lt;?import javafx.scene.control.Label?&gt; &lt;?import javafx.scene.control.MenuButton?&gt; &lt;?import javafx.scene.control.MenuItem?&gt; &lt;?import javafx.scene.control.Separator?&gt; &lt;?import javafx.scene.control.Tab?&gt; &lt;?import javafx.scene.control.TabPane?&gt; &lt;?import javafx.scene.control.TextArea?&gt; &lt;?import javafx.scene.control.TextField?&gt; &lt;?import javafx.scene.control.ToolBar?&gt; &lt;?import javafx.scene.layout.AnchorPane?&gt; &lt;?import javafx.scene.layout.Co</find>
       <find>t ins = null</find>
-      <find>init()</find>
       <find>user</find>
       <find>save</find>
       <find>getAll</find>
@@ -346,9 +234,19 @@
       <find>isUserBanned =</find>
       <find>del</find>
       <find>delete</find>
+      <find>empty</find>
+      <find>closeAdditionalWindow()</find>
+      <find>setOut</find>
+      <find>consoleP</find>
+      <find>tomPrintStream.init is setted</find>
+      <find>conn</find>
+      <find>close();</find>
+      <find>getSelectionModel</find>
+      <find>init()</find>
     </findStrings>
     <replaceStrings>
       <replace>t ins</replace>
+      <replace>close(conn);</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -385,22 +283,23 @@
         <option value="$PROJECT_DIR$/resources/fxml/main.fxml" />
         <option value="$PROJECT_DIR$/src/belcer/remoteserverconnector/controller/AppWindows.java" />
         <option value="$PROJECT_DIR$/src/belcer/remoteserverconnector/model/entity/Role.java" />
-        <option value="$PROJECT_DIR$/src/belcer/remoteserverconnector/controller/FrontController.java" />
         <option value="$PROJECT_DIR$/src/belcer/remoteserverconnector/model/dao/RoleDao.java" />
         <option value="$PROJECT_DIR$/src/belcer/remoteserverconnector/model/dao/UserDao.java" />
         <option value="$PROJECT_DIR$/src/belcer/remoteserverconnector/model/dao/oracle_impl/RoleDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/belcer/remoteserverconnector/model/dao/oracle_impl/UserDaoImpl.java" />
         <option value="$PROJECT_DIR$/test/belcer/remoteserverconnector/model/dao/oracle_impl/OracleConnectorTest.java" />
-        <option value="$PROJECT_DIR$/src/belcer/remoteserverconnector/Main.java" />
         <option value="$PROJECT_DIR$/src/belcer/remoteserverconnector/model/entity/ConnectionProfile.java" />
-        <option value="$PROJECT_DIR$/src/belcer/remoteserverconnector/controller/RegistrationController.java" />
         <option value="$PROJECT_DIR$/resources/fxml/admin.fxml" />
-        <option value="$PROJECT_DIR$/src/belcer/remoteserverconnector/controller/AdminController.java" />
         <option value="$PROJECT_DIR$/src/belcer/remoteserverconnector/model/entity/User.java" />
-        <option value="$PROJECT_DIR$/src/belcer/remoteserverconnector/model/dao/oracle_impl/OracleConnector.java" />
-        <option value="$PROJECT_DIR$/src/belcer/remoteserverconnector/controller/LoginController.java" />
         <option value="$PROJECT_DIR$/resources/fxml/cmp.fxml" />
         <option value="$PROJECT_DIR$/src/belcer/remoteserverconnector/model/dao/oracle_impl/ConnectionProfileDaoOracleImpl.java" />
+        <option value="$PROJECT_DIR$/src/belcer/remoteserverconnector/controller/AdminController.java" />
+        <option value="$PROJECT_DIR$/src/belcer/remoteserverconnector/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/src/belcer/remoteserverconnector/controller/RegistrationController.java" />
+        <option value="$PROJECT_DIR$/src/belcer/remoteserverconnector/model/CustomPrintStream.java" />
+        <option value="$PROJECT_DIR$/src/belcer/remoteserverconnector/controller/FrontController.java" />
+        <option value="$PROJECT_DIR$/src/belcer/remoteserverconnector/Main.java" />
+        <option value="$PROJECT_DIR$/src/belcer/remoteserverconnector/model/dao/oracle_impl/OracleConnector.java" />
         <option value="$PROJECT_DIR$/src/belcer/remoteserverconnector/controller/CmpController.java" />
       </list>
     </option>
@@ -410,13 +309,6 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHome" value="Bundled (Maven 3)" />
-      </MavenGeneralSettings>
-    </option>
   </component>
   <component name="MavenProjectNavigator">
     <treeState />
@@ -681,7 +573,7 @@
   <component name="PropertiesComponent">
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="C:/Program Files (x86)/Oracle/JavaFX Scene Builder 2.0/JavaFX Scene Builder 2.0.exe" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -1270,7 +1162,7 @@
       <workItem from="1485200160770" duration="330000" />
       <workItem from="1485281934620" duration="1219000" />
       <workItem from="1485283166157" duration="18428000" />
-      <workItem from="1485354711818" duration="251000" />
+      <workItem from="1485354711818" duration="10077000" />
     </task>
     <servers />
   </component>
@@ -1307,22 +1199,22 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52345000" />
+    <option name="totallyTimeSpent" value="62171000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884398" sideWeight="0.4978678" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827735" sideWeight="0.4978678" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36619717" sideWeight="0.5090618" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37486458" sideWeight="0.49093816" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37486458" sideWeight="0.49093816" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3261105" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -1330,6 +1222,7 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24786781" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20788912" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1344,7 +1237,6 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.4946695" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1372,26 +1264,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/belcer/remoteserverconnector/AdditionalWindow.java" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/30fbb4ee-eb03-4180-8829-c2bfa2dac6d5/console_1.sql" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/30fbb4ee-eb03-4180-8829-c2bfa2dac6d5/console_2.sql" />
-    <entry file="file://$PROJECT_DIR$/test/belcer/remoteserverconnector/model/entity/UserTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="25" column="51" lean-forward="false" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/belcer/remoteserverconnector/model/utils/UtilsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/30fbb4ee-eb03-4180-8829-c2bfa2dac6d5/console_3.sql" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_112/src.zip!/java/lang/Enum.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_112/javafx-src.zip!/javafx/application/Application.java" />
     <entry file="file://$PROJECT_DIR$/resources/fxml/login.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
@@ -1421,14 +1293,6 @@
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/30fbb4ee-eb03-4180-8829-c2bfa2dac6d5/console_11.sql" />
     <entry file="dbDummy://dbtable:/7a1bd8e5/30fbb4ee-eb03-4180-8829-c2bfa2dac6d5/SYSTEM.connection_profile" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/30fbb4ee-eb03-4180-8829-c2bfa2dac6d5/console_12.sql" />
-    <entry file="file://$PROJECT_DIR$/src/belcer/remoteserverconnector/model/FtpConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="497">
-          <caret line="48" column="8" lean-forward="false" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/belcer/remoteserverconnector/model/service/ConnectionsService.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/util/concurrent/Callable.java" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/1c35b834-e41d-4260-ba18-b2d21cb01169/console.sql" />
@@ -1457,14 +1321,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
           <caret line="40" column="37" lean-forward="false" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/belcer/remoteserverconnector/controller/FrontController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1203">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -1502,18 +1358,11 @@
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/lang/Thread.java" />
-    <entry file="file://$PROJECT_DIR$/src/belcer/remoteserverconnector/model/dao/oracle_impl/RoleDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="10" column="51" lean-forward="false" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/belcer/remoteserverconnector/model/dao/oracle_impl/OracleConnectorTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="26" column="56" lean-forward="false" selection-start-line="26" selection-start-column="56" selection-end-line="26" selection-end-column="56" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1529,14 +1378,6 @@
             <element signature="e#3161#3162#0" expanded="false" />
             <element signature="e#3189#3190#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/belcer/remoteserverconnector/controller/RegistrationController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="47" column="54" lean-forward="false" selection-start-line="47" selection-start-column="54" selection-end-line="47" selection-end-column="54" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1595,16 +1436,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/belcer/remoteserverconnector/controller/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="28" column="27" lean-forward="false" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/belcer/remoteserverconnector/model/dao/oracle_impl/UserDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -1629,63 +1460,176 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/belcer/remoteserverconnector/model/dao/oracle_impl/OracleConnector.java">
+    <entry file="file://$PROJECT_DIR$/src/belcer/remoteserverconnector/controller/AdminController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2737">
-          <caret line="173" column="28" lean-forward="false" selection-start-line="173" selection-start-column="28" selection-end-line="173" selection-end-column="28" />
+        <state relative-caret-position="200">
+          <caret line="53" column="32" lean-forward="true" selection-start-line="53" selection-start-column="32" selection-end-line="53" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/belcer/remoteserverconnector/controller/RegistrationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="53" column="21" lean-forward="true" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/jre/lib/rt.jar!/java/lang/String.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="207" column="26" lean-forward="false" selection-start-line="207" selection-start-column="21" selection-end-line="207" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#35871#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/default_dirs/server/server.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/belcer/remoteserverconnector/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="25" column="25" lean-forward="false" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../../../../../2-PPZ/labs/labs/math17/src/main/java/org/beltser/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="14" column="63" lean-forward="true" selection-start-line="14" selection-start-column="63" selection-end-line="14" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../../../../../2-PPZ/labs/labs/math17/src/main/java/org/beltser/CustomPrintStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="45" column="20" lean-forward="false" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../../../../../2-PPZ/labs/labs/math17/src/main/java/org/beltser/controller/FrontController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1734">
+          <caret line="44" column="23" lean-forward="true" selection-start-line="44" selection-start-column="23" selection-end-line="44" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/belcer/remoteserverconnector/model/dao/oracle_impl/RoleDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <element signature="e#560#561#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/belcer/remoteserverconnector/controller/FrontController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="128" column="0" lean-forward="true" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
+          <folding>
+            <element signature="e#3523#3524#0" expanded="true" />
+            <element signature="e#3557#3558#0" expanded="true" />
+            <element signature="e#3622#3623#0" expanded="true" />
+            <element signature="e#3668#3669#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/belcer/remoteserverconnector/model/CustomPrintStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/javafx-src.zip!/javafx/scene/control/SingleSelectionModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="66" column="26" lean-forward="false" selection-start-line="66" selection-start-column="26" selection-end-line="66" selection-end-column="26" />
+          <folding>
+            <element signature="e#2124#2125#0" expanded="false" />
+            <element signature="e#2163#2164#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/belcer/remoteserverconnector/model/FtpConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/belcer/remoteserverconnector/model/dao/oracle_impl/ConnectionProfileDaoOracleImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="51" column="56" lean-forward="false" selection-start-line="51" selection-start-column="56" selection-end-line="51" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#437#438#0" expanded="false" />
-            <element signature="e#494#495#0" expanded="false" />
-            <element signature="e#551#552#0" expanded="false" />
-            <element signature="e#597#598#0" expanded="false" />
-            <element signature="e#664#665#0" expanded="false" />
-            <element signature="e#717#718#0" expanded="false" />
-            <element signature="e#781#782#0" expanded="false" />
-            <element signature="e#827#828#0" expanded="false" />
-            <element signature="e#893#894#0" expanded="false" />
-            <element signature="e#941#942#0" expanded="false" />
-            <element signature="e#1313#1314#0" expanded="false" />
-            <element signature="e#1364#1365#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="328">
+          <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/belcer/remoteserverconnector/controller/AdminController.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/sql/Connection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="42" column="26" lean-forward="false" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/belcer/remoteserverconnector/controller/CmpController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="88" column="17" lean-forward="false" selection-start-line="88" selection-start-column="17" selection-end-line="88" selection-end-column="17" />
-          <folding>
-            <element signature="method#cancel#0;class#CmpController#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="183">
+          <caret line="83" column="17" lean-forward="false" selection-start-line="83" selection-start-column="17" selection-end-line="83" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/belcer/remoteserverconnector/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="48" column="17" lean-forward="false" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="17" />
+        <state relative-caret-position="378">
+          <caret line="132" column="9" lean-forward="true" selection-start-line="132" selection-start-column="9" selection-end-line="132" selection-end-column="9" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/belcer/remoteserverconnector/controller/CmpController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="193" column="13" lean-forward="true" selection-start-line="193" selection-start-column="13" selection-end-line="193" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/belcer/remoteserverconnector/model/dao/oracle_impl/OracleConnector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="373" column="24" lean-forward="true" selection-start-line="373" selection-start-column="24" selection-end-line="373" selection-end-column="24" />
+          <folding>
+            <marker date="1485368006444" expanded="true" signature="2552:2771" ph="SELECT \&quot;use... app_user" />
+            <marker date="1485368006444" expanded="true" signature="3795:4013" ph="INSERT INTO &quot;app_user&quot;... " />
+            <marker date="1485368006444" expanded="true" signature="4841:4996" ph="SELECT \&quot;use... app_user" />
+            <marker date="1485368006444" expanded="true" signature="6064:6539" ph="UPDATE &quot;app_... " />
+            <marker date="1485368006444" expanded="true" signature="7481:7761" ph="SELECT \&quot;tit... app_connection_profile" />
+            <marker date="1485368006444" expanded="true" signature="10163:10498" ph="SELECT \&quot;tit... app_connection_profile" />
+            <marker date="1485368006444" expanded="true" signature="12299:12313" ph="SELECT * FRO... app_connection_profile" />
+            <marker date="1485368006444" expanded="true" signature="13634:13709" ph="DELETE FROM " />
+            <marker date="1485368006444" expanded="true" signature="14118:14169" ph="DELETE FROM " />
+            <marker date="1485368006444" expanded="true" signature="14568:14641" ph="DELETE FROM " />
+            <marker date="1485368006444" expanded="true" signature="15095:15504" ph="INSERT INTO &quot;app_connection_profile&quot;... " />
+            <marker date="1485368006444" expanded="true" signature="16932:17702" ph="UPDATE &quot;app_... " />
+            <marker date="1485368006444" expanded="true" signature="18963:19053" ph="INSERT INTO &quot;app_role&quot;... " />
+            <marker date="1485368006444" expanded="true" signature="19474:19488" ph="SELECT * FRO... app_role" />
+          </folding>
         </state>
       </provider>
     </entry>

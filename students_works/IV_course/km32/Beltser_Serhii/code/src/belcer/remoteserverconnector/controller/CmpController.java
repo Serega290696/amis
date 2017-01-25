@@ -11,12 +11,10 @@ import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Properties;
+import java.util.*;
 
 public class CmpController {
     private UserDao userDao = new UserDaoImpl();
@@ -44,6 +42,8 @@ public class CmpController {
     private ChoiceBox protocol;
     @FXML
     private Button saveChangesButton;
+    @FXML
+    private Label errorLabel;
 
     public void init() {
         System.out.println("CmpController.init");
@@ -60,8 +60,12 @@ public class CmpController {
                 Object selectedItem = connectionsChoiceBox.getSelectionModel().getSelectedItem();
                 if (selectedItem != null) {
                     String chosenConnectionTitle = selectedItem.toString();
-                    ConnectionProfile connectionToSaving = getConnection(chosenConnectionTitle);
-                    saveEnteredConfigsAs(connectionToSaving);
+                    if (chosenConnectionTitle != null && !chosenConnectionTitle.isEmpty()) {
+                        ConnectionProfile connectionToSaving = getConnection(chosenConnectionTitle);
+                        if(connectionToSaving != null) {
+                            saveEnteredConfigsAs(connectionToSaving);
+                        }
+                    }
                 }
 
                 if ((Integer) newValue >= 0) {
@@ -89,9 +93,15 @@ public class CmpController {
         System.out.println("CmpController.newConnection");
         String newTitle = "Untitled";
         int counter = 1;
-        for (String title : choiceBoxItems) {
-            if ((newTitle + "-" + counter).equals(title)) {
-                counter++;
+        boolean titleIsChosen = false;
+        while (!titleIsChosen) {
+            titleIsChosen = true;
+            for (String title : choiceBoxItems) {
+                if ((newTitle + "-" + counter).equals(title)) {
+                    counter++;
+                    titleIsChosen = false;
+                    break;
+                }
             }
         }
         connectionsList.add(new ConnectionProfile(
@@ -105,20 +115,43 @@ public class CmpController {
 
     public void deleteConnection() {
         System.out.println("CmpController.deleteConnection");
-        connectionDao.delete(FrontController.getUser().getUsername(),
-                (String) connectionsChoiceBox.getSelectionModel().getSelectedItem()
-        );
+        String itemTitle = (String) connectionsChoiceBox.getSelectionModel().getSelectedItem();
+        if (itemTitle != null) {
+            errorLabel.setText("");
+            connectionDao.delete(FrontController.getUser().getUsername(),
+                    (String) connectionsChoiceBox.getSelectionModel().getSelectedItem()
+            );
+            choiceBoxItems.remove(itemTitle);
+            connectionsChoiceBox.getItems().remove(connectionsChoiceBox.getSelectionModel().getSelectedIndex());
+            if (itemTitle != null) {
+                connectionsList.removeIf(next -> itemTitle.equals(next.getTitle()));
+            }
+        } else {
+            errorLabel.setText("Please, choose item for deletion first");
+        }
     }
 
     public void connectToChosenConnection() {
         System.out.println("CmpController.connectToChosenConnection");
+        for (ConnectionProfile connectionProfile : connectionsList) {
+            if (connectionProfile.getConnectionUser() != null && !connectionProfile.getConnectionUser().isEmpty()
+                    && connectionProfile.getConnectionPass() != null && !connectionProfile.getConnectionPass().isEmpty()
+                    && connectionProfile.getHost() != null && !connectionProfile.getHost().isEmpty()
+                    && connectionProfile.getPort() != 0
+                    ) {
+                System.out.println("connection = " + connectionProfile);
+//                new Thread(() ->
+//                        connectionDao.saveOrUpdate(connectionProfile)).start();
+            } else {
+                errorLabel.setText("Wrong input. Please, fill all fields.");
+            }
+        }
+//        Properties properties = System.getProperties();
+//        FtpConnection client = new FtpConnection();
+//        client.init();
+//        client.uploadFile("client.txt", "server.txt");
 
-        Properties properties = System.getProperties();
-        FtpConnection client = new FtpConnection();
-        client.init();
-        client.uploadFile("client.txt", "server.txt");
-
-        client.downloadFile("sss.txt", "AAA.txt");
+//        client.downloadFile("sss.txt", "AAA.txt");
     }
 
     public void cancel() {
@@ -160,11 +193,11 @@ public class CmpController {
                 return connectionProfile;
             }
         }
-        try {
-            throw new Exception("Title '" + title + "' doesn't find.");
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+//        try {
+//            throw new Exception("Title '" + title + "' doesn't find.");
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
         return null;
     }
 }

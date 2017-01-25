@@ -7,6 +7,7 @@ import belcer.remoteserverconnector.model.entity.Role;
 import belcer.remoteserverconnector.model.entity.User;
 import belcer.remoteserverconnector.model.utils.Utils;
 import javafx.fxml.FXML;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
 public class RegistrationController {
@@ -21,6 +22,8 @@ public class RegistrationController {
   private TextField regPass2;
   @FXML
   private TextField regEmail;
+  @FXML
+  private Label errorLabel;
 
   public void register() {
     System.out.println("RegistrationController.register");
@@ -31,12 +34,15 @@ public class RegistrationController {
     boolean registrationDataCorrect = true;
     if (username.isEmpty()) {
       System.err.println("Username is empty");
+      errorLabel.setText("Username is empty");
       registrationDataCorrect = false;
     } else if (userDao.isUserWithSuchUsernameExist(username)) {
       System.err.println("User with such username is exist");
+      errorLabel.setText("User with such username is exist");
       registrationDataCorrect = false;
     } else if (pass == null || pass.isEmpty() || !pass.equals(pass2)) {
       System.err.println("Pass is empty or password isn't equals");
+      errorLabel.setText("Pass is empty or password isn't equals");
       registrationDataCorrect = false;
 //    } else if (email.isEmpty()) {
 //      registrationDataCorrect = false;
@@ -44,6 +50,7 @@ public class RegistrationController {
 
     if (registrationDataCorrect) {
       System.out.println("Registration data is OK");
+      errorLabel.setText("");
       User newUser = new User(username, email, Utils.hashPassword(pass), Role.USER);
       new Thread(() -> userDao.save(newUser)).start();
       User savedUser = userDao.get(username);
