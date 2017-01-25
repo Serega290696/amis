@@ -18,10 +18,10 @@ public class OracleConnector {
 //    INSTANCE,;
 
     private final static String HOST = "localhost";
-//    private final static String HOST = "77.47.134.131";
+    //    private final static String HOST = "77.47.134.131";
     private final static String PORT = "1521";
     private final static String SCHEMA = "orcl";
-//    private final static String SCHEMA = "xe";
+    //    private final static String SCHEMA = "xe";
     private final static String URL_SCHEMA = "jdbc:oracle:thin:@%1$s:%2$s/%3$s";
     private final static String USER_LOGIN = "system";
     private final static String USER_PASS = "root";
@@ -67,6 +67,8 @@ public class OracleConnector {
         PreparedStatement ins;
         User user = null;
         try {
+            conn.setTransactionIsolation(Connection.TRANSACTION_READ_COMMITTED);
+            conn.setAutoCommit(false);
             ins = conn.prepareStatement("SELECT \"username\", \"email\", " +
                     "\"password\", \"registration_date\", \"last_login\", \"role_title\", \"deleted\", \"banned\" " +
                     "FROM " + usersTable + " WHERE \"username\"=?");
@@ -83,7 +85,14 @@ public class OracleConnector {
                     resultSet.getTimestamp(5),
                     Role.parseString(resultSet.getString(6)),
                     resultSet.getInt(7), resultSet.getInt(8));
+            conn.commit();
+            conn.setAutoCommit(true);
         } catch (SQLException e) {
+            try {
+                conn.rollback();
+            } catch (SQLException e1) {
+                e1.printStackTrace();
+            }
             e.printStackTrace();
         } finally {
             close(conn);
@@ -109,7 +118,13 @@ public class OracleConnector {
             ins.setString(6, user.getRole().toString());
             ins.executeQuery();
             conn.commit();
+            conn.setAutoCommit(true);
         } catch (SQLException e) {
+            try {
+                conn.rollback();
+            } catch (SQLException e1) {
+                e1.printStackTrace();
+            }
             e.printStackTrace();
         } finally {
             close(conn);
@@ -124,6 +139,8 @@ public class OracleConnector {
         PreparedStatement ins;
         List<User> users = new ArrayList<>();
         try {
+            conn.setTransactionIsolation(Connection.TRANSACTION_READ_COMMITTED);
+            conn.setAutoCommit(false);
             ins = conn.prepareStatement("SELECT \"username\", \"email\", " +
                     "\"password\", \"registration_date\", \"last_login\", \"role_title\", \"deleted\", \"banned\" FROM " + usersTable + "");
             ResultSet resultSet = ins.executeQuery();
@@ -141,7 +158,14 @@ public class OracleConnector {
                         resultSet.getInt(8)
                 ));
             }
+            conn.commit();
+            conn.setAutoCommit(true);
         } catch (SQLException e) {
+            try {
+                conn.rollback();
+            } catch (SQLException e1) {
+                e1.printStackTrace();
+            }
             e.printStackTrace();
         } finally {
             close(conn);
@@ -154,6 +178,8 @@ public class OracleConnector {
         System.out.println("OracleConnector.updateUser: " + user);
         PreparedStatement ins;
         try {
+            conn.setTransactionIsolation(Connection.TRANSACTION_SERIALIZABLE);
+            conn.setAutoCommit(false);
             ins = conn.prepareStatement(
                     "UPDATE " + usersTable + " " +
                             " SET" +
@@ -175,7 +201,14 @@ public class OracleConnector {
             ins.setInt(7, user.getBanned());
             ins.setString(8, username);
             ins.executeQuery();
+            conn.commit();
+            conn.setAutoCommit(true);
         } catch (SQLException e) {
+            try {
+                conn.rollback();
+            } catch (SQLException e1) {
+                e1.printStackTrace();
+            }
             e.printStackTrace();
         } finally {
             close(conn);
@@ -190,6 +223,8 @@ public class OracleConnector {
         PreparedStatement ins;
         List<ConnectionProfile> connections = new ArrayList<>();
         try {
+            conn.setTransactionIsolation(Connection.TRANSACTION_READ_COMMITTED);
+            conn.setAutoCommit(false);
             ins = conn.prepareStatement("SELECT \"title\", \"connection_pass\", \"connection_user\", \"port\", \"host\", \"protocol\", " +
                     " \"date_modified\", \"last_connection_date\", \"deleted\", \"saved_by_user\", \"username\", \"date_created\" FROM " + connectionsTable + " WHERE \"username\" = ? ");
             ins.setString(1, username);
@@ -223,7 +258,14 @@ public class OracleConnector {
 //            resultSet.getBoolean(11), resultSet.getString(12)
 
             }
+            conn.commit();
+            conn.setAutoCommit(true);
         } catch (SQLException e) {
+            try {
+                conn.rollback();
+            } catch (SQLException e1) {
+                e1.printStackTrace();
+            }
             e.printStackTrace();
         } finally {
             close(conn);
@@ -237,6 +279,8 @@ public class OracleConnector {
         PreparedStatement ins;
         ConnectionProfile connection = null;
         try {
+            conn.setTransactionIsolation(Connection.TRANSACTION_READ_COMMITTED);
+            conn.setAutoCommit(false);
             ins = conn.prepareStatement("SELECT \"title\" , \"connection_pass\" , \"connection_user\" , \"port\" , \"host\" , \"protocol\" , " +
                     " \"date_modified\" , \"last_connection_date\" , \"deleted\" , \"saved_by_user\" , \"username\" , \"date_created\" FROM " + connectionsTable + " " +
                     " WHERE \"username\" = ? AND \"title\" = ?");
@@ -265,7 +309,14 @@ public class OracleConnector {
 //          resultSet.getString(5), resultSet.getString(6), resultSet.getDate(7), resultSet.getDate(8), resultSet.getDate(9), resultSet.getBoolean(10),
 //          resultSet.getBoolean(11), resultSet.getString(12)
 //      );
+            conn.commit();
+            conn.setAutoCommit(true);
         } catch (SQLException e) {
+            try {
+                conn.rollback();
+            } catch (SQLException e1) {
+                e1.printStackTrace();
+            }
             e.printStackTrace();
         } finally {
             close(conn);
@@ -278,6 +329,8 @@ public class OracleConnector {
         PreparedStatement ins;
         List<ConnectionProfile> connections = new ArrayList<>();
         try {
+            conn.setTransactionIsolation(Connection.TRANSACTION_READ_COMMITTED);
+            conn.setAutoCommit(false);
             ins = conn.prepareStatement("SELECT * FROM " + connectionsTable);
             ResultSet resultSet = ins.executeQuery();
             if (!resultSet.isBeforeFirst()) {
@@ -299,7 +352,14 @@ public class OracleConnector {
                         resultSet.getString(12)
                 ));
             }
+            conn.commit();
+            conn.setAutoCommit(true);
         } catch (SQLException e) {
+            try {
+                conn.rollback();
+            } catch (SQLException e1) {
+                e1.printStackTrace();
+            }
             e.printStackTrace();
         } finally {
             close(conn);
@@ -311,11 +371,20 @@ public class OracleConnector {
         Connection conn = open();
         PreparedStatement ins;
         try {
+            conn.setTransactionIsolation(Connection.TRANSACTION_SERIALIZABLE);
+            conn.setAutoCommit(false);
             ins = conn.prepareStatement("DELETE FROM " + connectionsTable + " WHERE \"username\"=? AND \"title\" = ?");
             ins.setString(1, username);
             ins.setString(2, title);
             ins.executeQuery();
+            conn.commit();
+            conn.setAutoCommit(true);
         } catch (SQLException e) {
+            try {
+                conn.rollback();
+            } catch (SQLException e1) {
+                e1.printStackTrace();
+            }
             e.printStackTrace();
         } finally {
             close(conn);
@@ -326,10 +395,19 @@ public class OracleConnector {
         Connection conn = open();
         PreparedStatement ins;
         try {
+            conn.setTransactionIsolation(Connection.TRANSACTION_SERIALIZABLE);
+            conn.setAutoCommit(false);
             ins = conn.prepareStatement("DELETE FROM " + usersTable + " WHERE \"username\"=?");
             ins.setString(1, username);
             ins.executeQuery();
+            conn.commit();
+            conn.setAutoCommit(true);
         } catch (SQLException e) {
+            try {
+                conn.rollback();
+            } catch (SQLException e1) {
+                e1.printStackTrace();
+            }
             e.printStackTrace();
         } finally {
             close(conn);
@@ -340,11 +418,20 @@ public class OracleConnector {
         Connection conn = open();
         PreparedStatement ins;
         try {
+            conn.setTransactionIsolation(Connection.TRANSACTION_SERIALIZABLE);
+            conn.setAutoCommit(false);
             ins = conn.prepareStatement("DELETE FROM " + connectionsTable + " WHERE \"username\"=? AND \"title\"=?");
             ins.setString(1, username);
             ins.setString(2, title);
             ins.executeQuery();
+            conn.commit();
+            conn.setAutoCommit(true);
         } catch (SQLException e) {
+            try {
+                conn.rollback();
+            } catch (SQLException e1) {
+                e1.printStackTrace();
+            }
             e.printStackTrace();
         } finally {
             close(conn);
@@ -355,6 +442,8 @@ public class OracleConnector {
         Connection conn = open();
         PreparedStatement ins;
         try {
+            conn.setTransactionIsolation(Connection.TRANSACTION_SERIALIZABLE);
+            conn.setAutoCommit(false);
             ins = conn.prepareStatement(
                     "INSERT INTO " + connectionsTable + " (" +
                             "\"title\", \"connection_pass\", \"connection_user\", \"port\", \"host\", \"protocol\", " +
@@ -375,7 +464,14 @@ public class OracleConnector {
             ins.setString(11, connectionProfile.getUsername());
             ins.setDate(12, connectionProfile.getDateCreated());
             ins.executeQuery();
+            conn.commit();
+            conn.setAutoCommit(true);
         } catch (SQLException e) {
+            try {
+                conn.rollback();
+            } catch (SQLException e1) {
+                e1.printStackTrace();
+            }
             e.printStackTrace();
         } finally {
             close(conn);
@@ -386,6 +482,8 @@ public class OracleConnector {
         Connection conn = open();
         PreparedStatement ins;
         try {
+            conn.setTransactionIsolation(Connection.TRANSACTION_SERIALIZABLE);
+            conn.setAutoCommit(false);
 //      "title", "connection_password", "connection_user", "port", "host", "protocol", " +
 //      "\"date_modified\", \"last_connection_date\", " +
 //          ""deleted", "saved_by_user", "username_fk", "created_date"
@@ -421,7 +519,14 @@ public class OracleConnector {
             ins.setString(13, connectionProfile.getUsername());
             ins.setString(14, connectionProfile.getTitle());
             ins.executeQuery();
+            conn.commit();
+            conn.setAutoCommit(true);
         } catch (SQLException e) {
+            try {
+                conn.rollback();
+            } catch (SQLException e1) {
+                e1.printStackTrace();
+            }
             e.printStackTrace();
         } finally {
             close(conn);
@@ -432,12 +537,21 @@ public class OracleConnector {
         Connection conn = open();
         PreparedStatement ins;
         try {
+            conn.setTransactionIsolation(Connection.TRANSACTION_SERIALIZABLE);
+            conn.setAutoCommit(false);
             ins = conn.prepareStatement(
                     "INSERT INTO " + roleTable + " (\"role_title\") " +
                             "VALUES (?)");
             ins.setString(1, role.getRoleTitle());
             ins.executeQuery();
+            conn.commit();
+            conn.setAutoCommit(true);
         } catch (SQLException e) {
+            try {
+                conn.rollback();
+            } catch (SQLException e1) {
+                e1.printStackTrace();
+            }
             e.printStackTrace();
         } finally {
             close(conn);
@@ -449,6 +563,8 @@ public class OracleConnector {
         PreparedStatement ins;
         List<Role> roles = new ArrayList<>();
         try {
+            conn.setTransactionIsolation(Connection.TRANSACTION_READ_COMMITTED);
+            conn.setAutoCommit(false);
             ins = conn.prepareStatement("SELECT * FROM " + roleTable);
             ResultSet resultSet = ins.executeQuery();
             if (!resultSet.isBeforeFirst()) {
@@ -458,7 +574,14 @@ public class OracleConnector {
 //        user = new User(resultSet.getString(1), resultSet.getString(2), resultSet.getString(3), resultSet.getDate(4), resultSet.getDate(5));
                 roles.add(Role.parseString(resultSet.getString(1)));
             }
+            conn.commit();
+            conn.setAutoCommit(true);
         } catch (SQLException e) {
+            try {
+                conn.rollback();
+            } catch (SQLException e1) {
+                e1.printStackTrace();
+            }
             e.printStackTrace();
         } finally {
             close(conn);

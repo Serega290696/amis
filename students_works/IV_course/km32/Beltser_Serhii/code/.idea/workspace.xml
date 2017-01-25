@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b6e31a4-f400-46ab-ac74-7c5ccb791863" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/belcer/remoteserverconnector/model/CustomPrintStream.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../src/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../src/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../src/.idea/src.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../src/.idea/workspace.xml" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../../Andrieieva_Yuliia/welcome.txt" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../../Arsenych_Olha/welcome.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/remote_server_connector/belcer/remoteserverconnector/Main$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/remote_server_connector/belcer/remoteserverconnector/Main.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../../Borysiuk_Iryna/welcome.txt" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../../Drabchuk_Denys/welcome.txt" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../../Husieva_Anna/welcome.txt" afterPath="" />
@@ -28,30 +21,9 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/../../Tupchiienko_Dmytro/welcome.txt" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../../Yefanova_Lada/welcome.txt" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../../Zhuk_Ivan/welcome.txt" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/remote_server_connector_jar/remote_server_connector.jar" afterPath="$PROJECT_DIR$/out/artifacts/remote_server_connector_jar/remote_server_connector.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/remote_server_connector/belcer/remoteserverconnector/controller/AdminController.class" afterPath="$PROJECT_DIR$/out/production/remote_server_connector/belcer/remoteserverconnector/controller/AdminController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/remote_server_connector/belcer/remoteserverconnector/controller/CmpController.class" afterPath="$PROJECT_DIR$/out/production/remote_server_connector/belcer/remoteserverconnector/controller/CmpController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/remote_server_connector/belcer/remoteserverconnector/controller/LoginController.class" afterPath="$PROJECT_DIR$/out/production/remote_server_connector/belcer/remoteserverconnector/controller/LoginController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/remote_server_connector/belcer/remoteserverconnector/controller/RegistrationController.class" afterPath="$PROJECT_DIR$/out/production/remote_server_connector/belcer/remoteserverconnector/controller/RegistrationController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/remote_server_connector/belcer/remoteserverconnector/model/dao/oracle_impl/OracleConnector.class" afterPath="$PROJECT_DIR$/out/production/remote_server_connector/belcer/remoteserverconnector/model/dao/oracle_impl/OracleConnector.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/remote_server_connector/fxml/admin.fxml" afterPath="$PROJECT_DIR$/out/production/remote_server_connector/fxml/admin.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/remote_server_connector/fxml/cmp.fxml" afterPath="$PROJECT_DIR$/out/production/remote_server_connector/fxml/cmp.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/remote_server_connector/fxml/login.fxml" afterPath="$PROJECT_DIR$/out/production/remote_server_connector/fxml/login.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/remote_server_connector/fxml/main.fxml" afterPath="$PROJECT_DIR$/out/production/remote_server_connector/fxml/main.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/remote_server_connector/fxml/signup.fxml" afterPath="$PROJECT_DIR$/out/production/remote_server_connector/fxml/signup.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/fxml/admin.fxml" afterPath="$PROJECT_DIR$/resources/fxml/admin.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/fxml/cmp.fxml" afterPath="$PROJECT_DIR$/resources/fxml/cmp.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/fxml/login.fxml" afterPath="$PROJECT_DIR$/resources/fxml/login.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/fxml/main.fxml" afterPath="$PROJECT_DIR$/resources/fxml/main.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/fxml/signup.fxml" afterPath="$PROJECT_DIR$/resources/fxml/signup.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/belcer/remoteserverconnector/Main.java" afterPath="$PROJECT_DIR$/src/belcer/remoteserverconnector/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/belcer/remoteserverconnector/controller/AdminController.java" afterPath="$PROJECT_DIR$/src/belcer/remoteserverconnector/controller/AdminController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/belcer/remoteserverconnector/controller/CmpController.java" afterPath="$PROJECT_DIR$/src/belcer/remoteserverconnector/controller/CmpController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/belcer/remoteserverconnector/controller/FrontController.java" afterPath="$PROJECT_DIR$/src/belcer/remoteserverconnector/controller/FrontController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/belcer/remoteserverconnector/controller/LoginController.java" afterPath="$PROJECT_DIR$/src/belcer/remoteserverconnector/controller/LoginController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/belcer/remoteserverconnector/controller/RegistrationController.java" afterPath="$PROJECT_DIR$/src/belcer/remoteserverconnector/controller/RegistrationController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/belcer/remoteserverconnector/model/dao/oracle_impl/OracleConnector.java" afterPath="$PROJECT_DIR$/src/belcer/remoteserverconnector/model/dao/oracle_impl/OracleConnector.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../src/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../src/.idea/workspace.xml" />
     </list>
     <ignored path="remote_server_connector.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -182,23 +154,23 @@
       <file leaf-file-name="OracleConnector.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/belcer/remoteserverconnector/model/dao/oracle_impl/OracleConnector.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="373" column="24" lean-forward="true" selection-start-line="373" selection-start-column="24" selection-end-line="373" selection-end-column="24" />
+            <state relative-caret-position="702">
+              <caret line="565" column="78" lean-forward="false" selection-start-line="565" selection-start-column="78" selection-end-line="565" selection-end-column="78" />
               <folding>
-                <marker date="1485368006444" expanded="true" signature="2552:2771" ph="SELECT \&quot;use... app_user" />
-                <marker date="1485368006444" expanded="true" signature="3795:4013" ph="INSERT INTO &quot;app_user&quot;... " />
-                <marker date="1485368006444" expanded="true" signature="4841:4996" ph="SELECT \&quot;use... app_user" />
-                <marker date="1485368006444" expanded="true" signature="6064:6539" ph="UPDATE &quot;app_... " />
-                <marker date="1485368006444" expanded="true" signature="7481:7761" ph="SELECT \&quot;tit... app_connection_profile" />
-                <marker date="1485368006444" expanded="true" signature="10163:10498" ph="SELECT \&quot;tit... app_connection_profile" />
-                <marker date="1485368006444" expanded="true" signature="12299:12313" ph="SELECT * FRO... app_connection_profile" />
-                <marker date="1485368006444" expanded="true" signature="13634:13709" ph="DELETE FROM " />
-                <marker date="1485368006444" expanded="true" signature="14118:14169" ph="DELETE FROM " />
-                <marker date="1485368006444" expanded="true" signature="14568:14641" ph="DELETE FROM " />
-                <marker date="1485368006444" expanded="true" signature="15095:15504" ph="INSERT INTO &quot;app_connection_profile&quot;... " />
-                <marker date="1485368006444" expanded="true" signature="16932:17702" ph="UPDATE &quot;app_... " />
-                <marker date="1485368006444" expanded="true" signature="18963:19053" ph="INSERT INTO &quot;app_role&quot;... " />
-                <marker date="1485368006444" expanded="true" signature="19474:19488" ph="SELECT * FRO... app_role" />
+                <marker date="1485380828742" expanded="true" signature="2680:2899" ph="SELECT \&quot;use... app_user" />
+                <marker date="1485380828742" expanded="true" signature="4131:4349" ph="INSERT INTO &quot;app_user&quot;... " />
+                <marker date="1485380828742" expanded="true" signature="5478:5633" ph="SELECT \&quot;use... app_user" />
+                <marker date="1485380828742" expanded="true" signature="7027:7502" ph="UPDATE &quot;app_... " />
+                <marker date="1485380828742" expanded="true" signature="8772:9052" ph="SELECT \&quot;tit... app_connection_profile" />
+                <marker date="1485380828742" expanded="true" signature="11782:12117" ph="SELECT \&quot;tit... app_connection_profile" />
+                <marker date="1485380828742" expanded="true" signature="14246:14260" ph="SELECT * FRO... app_connection_profile" />
+                <marker date="1485380828742" expanded="true" signature="15907:15982" ph="DELETE FROM " />
+                <marker date="1485380828742" expanded="true" signature="16717:16768" ph="DELETE FROM " />
+                <marker date="1485380828742" expanded="true" signature="17493:17566" ph="DELETE FROM " />
+                <marker date="1485380828742" expanded="true" signature="18346:18755" ph="INSERT INTO &quot;app_connection_profile&quot;... " />
+                <marker date="1485380828742" expanded="true" signature="20509:21279" ph="UPDATE &quot;app_... " />
+                <marker date="1485380828742" expanded="true" signature="22866:22956" ph="INSERT INTO &quot;app_role&quot;... " />
+                <marker date="1485380828742" expanded="true" signature="23705:23719" ph="SELECT * FRO... app_role" />
               </folding>
             </state>
           </provider>
@@ -299,8 +271,8 @@
         <option value="$PROJECT_DIR$/src/belcer/remoteserverconnector/model/CustomPrintStream.java" />
         <option value="$PROJECT_DIR$/src/belcer/remoteserverconnector/controller/FrontController.java" />
         <option value="$PROJECT_DIR$/src/belcer/remoteserverconnector/Main.java" />
-        <option value="$PROJECT_DIR$/src/belcer/remoteserverconnector/model/dao/oracle_impl/OracleConnector.java" />
         <option value="$PROJECT_DIR$/src/belcer/remoteserverconnector/controller/CmpController.java" />
+        <option value="$PROJECT_DIR$/src/belcer/remoteserverconnector/model/dao/oracle_impl/OracleConnector.java" />
       </list>
     </option>
   </component>
@@ -1162,7 +1134,7 @@
       <workItem from="1485200160770" duration="330000" />
       <workItem from="1485281934620" duration="1219000" />
       <workItem from="1485283166157" duration="18428000" />
-      <workItem from="1485354711818" duration="10077000" />
+      <workItem from="1485354711818" duration="11198000" />
     </task>
     <servers />
   </component>
@@ -1199,10 +1171,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62171000" />
+    <option name="totallyTimeSpent" value="63292000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1214,7 +1186,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36619717" sideWeight="0.5090618" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37486458" sideWeight="0.49093816" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37486458" sideWeight="0.49093816" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3261105" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -1223,7 +1195,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24786781" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20788912" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1612,23 +1584,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/belcer/remoteserverconnector/model/dao/oracle_impl/OracleConnector.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="373" column="24" lean-forward="true" selection-start-line="373" selection-start-column="24" selection-end-line="373" selection-end-column="24" />
+        <state relative-caret-position="702">
+          <caret line="565" column="78" lean-forward="false" selection-start-line="565" selection-start-column="78" selection-end-line="565" selection-end-column="78" />
           <folding>
-            <marker date="1485368006444" expanded="true" signature="2552:2771" ph="SELECT \&quot;use... app_user" />
-            <marker date="1485368006444" expanded="true" signature="3795:4013" ph="INSERT INTO &quot;app_user&quot;... " />
-            <marker date="1485368006444" expanded="true" signature="4841:4996" ph="SELECT \&quot;use... app_user" />
-            <marker date="1485368006444" expanded="true" signature="6064:6539" ph="UPDATE &quot;app_... " />
-            <marker date="1485368006444" expanded="true" signature="7481:7761" ph="SELECT \&quot;tit... app_connection_profile" />
-            <marker date="1485368006444" expanded="true" signature="10163:10498" ph="SELECT \&quot;tit... app_connection_profile" />
-            <marker date="1485368006444" expanded="true" signature="12299:12313" ph="SELECT * FRO... app_connection_profile" />
-            <marker date="1485368006444" expanded="true" signature="13634:13709" ph="DELETE FROM " />
-            <marker date="1485368006444" expanded="true" signature="14118:14169" ph="DELETE FROM " />
-            <marker date="1485368006444" expanded="true" signature="14568:14641" ph="DELETE FROM " />
-            <marker date="1485368006444" expanded="true" signature="15095:15504" ph="INSERT INTO &quot;app_connection_profile&quot;... " />
-            <marker date="1485368006444" expanded="true" signature="16932:17702" ph="UPDATE &quot;app_... " />
-            <marker date="1485368006444" expanded="true" signature="18963:19053" ph="INSERT INTO &quot;app_role&quot;... " />
-            <marker date="1485368006444" expanded="true" signature="19474:19488" ph="SELECT * FRO... app_role" />
+            <marker date="1485380828742" expanded="true" signature="2680:2899" ph="SELECT \&quot;use... app_user" />
+            <marker date="1485380828742" expanded="true" signature="4131:4349" ph="INSERT INTO &quot;app_user&quot;... " />
+            <marker date="1485380828742" expanded="true" signature="5478:5633" ph="SELECT \&quot;use... app_user" />
+            <marker date="1485380828742" expanded="true" signature="7027:7502" ph="UPDATE &quot;app_... " />
+            <marker date="1485380828742" expanded="true" signature="8772:9052" ph="SELECT \&quot;tit... app_connection_profile" />
+            <marker date="1485380828742" expanded="true" signature="11782:12117" ph="SELECT \&quot;tit... app_connection_profile" />
+            <marker date="1485380828742" expanded="true" signature="14246:14260" ph="SELECT * FRO... app_connection_profile" />
+            <marker date="1485380828742" expanded="true" signature="15907:15982" ph="DELETE FROM " />
+            <marker date="1485380828742" expanded="true" signature="16717:16768" ph="DELETE FROM " />
+            <marker date="1485380828742" expanded="true" signature="17493:17566" ph="DELETE FROM " />
+            <marker date="1485380828742" expanded="true" signature="18346:18755" ph="INSERT INTO &quot;app_connection_profile&quot;... " />
+            <marker date="1485380828742" expanded="true" signature="20509:21279" ph="UPDATE &quot;app_... " />
+            <marker date="1485380828742" expanded="true" signature="22866:22956" ph="INSERT INTO &quot;app_role&quot;... " />
+            <marker date="1485380828742" expanded="true" signature="23705:23719" ph="SELECT * FRO... app_role" />
           </folding>
         </state>
       </provider>
