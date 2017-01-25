@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b6e31a4-f400-46ab-ac74-7c5ccb791863" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/fxml/admin.fxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/belcer/remoteserverconnector/controller/AdminController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/belcer/remoteserverconnector/model/dao/RoleDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/belcer/remoteserverconnector/model/dao/oracle_impl/RoleDaoImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/remote_server_connector_jar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../../Andrieieva_Yuliia/welcome.txt" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../../Arsenych_Olha/welcome.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/remote_server_connector/belcer/remoteserverconnector/model/Main.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/remote_server_connector/belcer/remoteserverconnector/model/service/ConnectionsService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/belcer/remoteserverconnector/model/service/ConnectionsService.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../../Borysiuk_Iryna/welcome.txt" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../../Drabchuk_Denys/welcome.txt" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../../Husieva_Anna/welcome.txt" afterPath="" />
@@ -29,46 +23,8 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/../../Tupchiienko_Dmytro/welcome.txt" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../../Yefanova_Lada/welcome.txt" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../../Zhuk_Ivan/welcome.txt" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/remote_server_connector/belcer/remoteserverconnector/Main$1.class" afterPath="$PROJECT_DIR$/out/production/remote_server_connector/belcer/remoteserverconnector/Main$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/remote_server_connector/belcer/remoteserverconnector/Main.class" afterPath="$PROJECT_DIR$/out/production/remote_server_connector/belcer/remoteserverconnector/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/remote_server_connector/belcer/remoteserverconnector/controller/AppWindows.class" afterPath="$PROJECT_DIR$/out/production/remote_server_connector/belcer/remoteserverconnector/controller/AppWindows.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/remote_server_connector/belcer/remoteserverconnector/controller/CmpController.class" afterPath="$PROJECT_DIR$/out/production/remote_server_connector/belcer/remoteserverconnector/controller/CmpController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/remote_server_connector/belcer/remoteserverconnector/controller/FrontController.class" afterPath="$PROJECT_DIR$/out/production/remote_server_connector/belcer/remoteserverconnector/controller/FrontController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/remote_server_connector/belcer/remoteserverconnector/controller/LoginController.class" afterPath="$PROJECT_DIR$/out/production/remote_server_connector/belcer/remoteserverconnector/controller/LoginController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/remote_server_connector/belcer/remoteserverconnector/controller/RegistrationController.class" afterPath="$PROJECT_DIR$/out/production/remote_server_connector/belcer/remoteserverconnector/controller/RegistrationController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/remote_server_connector/belcer/remoteserverconnector/model/FtpConnection.class" afterPath="$PROJECT_DIR$/out/production/remote_server_connector/belcer/remoteserverconnector/model/FtpConnection.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/remote_server_connector/belcer/remoteserverconnector/model/dao/UserDao.class" afterPath="$PROJECT_DIR$/out/production/remote_server_connector/belcer/remoteserverconnector/model/dao/UserDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/remote_server_connector/belcer/remoteserverconnector/model/dao/oracle_impl/ConnectionProfileDaoOracleImpl.class" afterPath="$PROJECT_DIR$/out/production/remote_server_connector/belcer/remoteserverconnector/model/dao/oracle_impl/ConnectionProfileDaoOracleImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/remote_server_connector/belcer/remoteserverconnector/model/dao/oracle_impl/OracleConnector.class" afterPath="$PROJECT_DIR$/out/production/remote_server_connector/belcer/remoteserverconnector/model/dao/oracle_impl/OracleConnector.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/remote_server_connector/belcer/remoteserverconnector/model/dao/oracle_impl/UserDaoImpl.class" afterPath="$PROJECT_DIR$/out/production/remote_server_connector/belcer/remoteserverconnector/model/dao/oracle_impl/UserDaoImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/remote_server_connector/belcer/remoteserverconnector/model/entity/ConnectionProfile.class" afterPath="$PROJECT_DIR$/out/production/remote_server_connector/belcer/remoteserverconnector/model/entity/ConnectionProfile.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/remote_server_connector/belcer/remoteserverconnector/model/entity/Role$1.class" afterPath="$PROJECT_DIR$/out/production/remote_server_connector/belcer/remoteserverconnector/model/entity/Role$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/remote_server_connector/belcer/remoteserverconnector/model/entity/Role.class" afterPath="$PROJECT_DIR$/out/production/remote_server_connector/belcer/remoteserverconnector/model/entity/Role.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/remote_server_connector/belcer/remoteserverconnector/model/entity/User.class" afterPath="$PROJECT_DIR$/out/production/remote_server_connector/belcer/remoteserverconnector/model/entity/User.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/remote_server_connector/belcer/remoteserverconnector/model/dao/oracle_impl/OracleConnectorTest.class" afterPath="$PROJECT_DIR$/out/test/remote_server_connector/belcer/remoteserverconnector/model/dao/oracle_impl/OracleConnectorTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ERD/ERD_physical.pdm" afterPath="$PROJECT_DIR$/../ERD/ERD_physical.pdm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/remote_server_connector/fxml/cmp.fxml" afterPath="$PROJECT_DIR$/out/production/remote_server_connector/fxml/cmp.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/remote_server_connector/fxml/main.fxml" afterPath="$PROJECT_DIR$/out/production/remote_server_connector/fxml/main.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/fxml/cmp.fxml" afterPath="$PROJECT_DIR$/resources/fxml/cmp.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/fxml/main.fxml" afterPath="$PROJECT_DIR$/resources/fxml/main.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/belcer/remoteserverconnector/Main.java" afterPath="$PROJECT_DIR$/src/belcer/remoteserverconnector/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/belcer/remoteserverconnector/controller/AppWindows.java" afterPath="$PROJECT_DIR$/src/belcer/remoteserverconnector/controller/AppWindows.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/belcer/remoteserverconnector/controller/CmpController.java" afterPath="$PROJECT_DIR$/src/belcer/remoteserverconnector/controller/CmpController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/belcer/remoteserverconnector/controller/FrontController.java" afterPath="$PROJECT_DIR$/src/belcer/remoteserverconnector/controller/FrontController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/belcer/remoteserverconnector/controller/LoginController.java" afterPath="$PROJECT_DIR$/src/belcer/remoteserverconnector/controller/LoginController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/belcer/remoteserverconnector/controller/RegistrationController.java" afterPath="$PROJECT_DIR$/src/belcer/remoteserverconnector/controller/RegistrationController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/belcer/remoteserverconnector/model/dao/UserDao.java" afterPath="$PROJECT_DIR$/src/belcer/remoteserverconnector/model/dao/UserDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/belcer/remoteserverconnector/model/dao/oracle_impl/ConnectionProfileDaoOracleImpl.java" afterPath="$PROJECT_DIR$/src/belcer/remoteserverconnector/model/dao/oracle_impl/ConnectionProfileDaoOracleImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/belcer/remoteserverconnector/model/dao/oracle_impl/OracleConnector.java" afterPath="$PROJECT_DIR$/src/belcer/remoteserverconnector/model/dao/oracle_impl/OracleConnector.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/belcer/remoteserverconnector/model/dao/oracle_impl/UserDaoImpl.java" afterPath="$PROJECT_DIR$/src/belcer/remoteserverconnector/model/dao/oracle_impl/UserDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/belcer/remoteserverconnector/model/entity/ConnectionProfile.java" afterPath="$PROJECT_DIR$/src/belcer/remoteserverconnector/model/entity/ConnectionProfile.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/belcer/remoteserverconnector/model/entity/Role.java" afterPath="$PROJECT_DIR$/src/belcer/remoteserverconnector/model/entity/Role.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/belcer/remoteserverconnector/model/entity/User.java" afterPath="$PROJECT_DIR$/src/belcer/remoteserverconnector/model/entity/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/belcer/remoteserverconnector/model/dao/oracle_impl/OracleConnectorTest.java" afterPath="$PROJECT_DIR$/test/belcer/remoteserverconnector/model/dao/oracle_impl/OracleConnectorTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../data model.cdb" afterPath="$PROJECT_DIR$/../data model.cdb" />
     </list>
     <ignored path="remote_server_connector.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -179,8 +135,8 @@
       <file leaf-file-name="AdminController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/belcer/remoteserverconnector/controller/AdminController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="82" column="58" lean-forward="true" selection-start-line="82" selection-start-column="58" selection-end-line="82" selection-end-column="58" />
+            <state relative-caret-position="1127">
+              <caret line="112" column="1" lean-forward="true" selection-start-line="112" selection-start-column="1" selection-end-line="112" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -386,6 +342,20 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="code" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="code" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="remoteserverconnector" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
@@ -575,6 +545,42 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="code" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="code" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="out" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="code" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="code" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="out" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="artifacts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="remote_server_connector_jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
@@ -585,7 +591,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
@@ -1180,7 +1186,7 @@
       <workItem from="1483951936988" duration="118000" />
       <workItem from="1485200160770" duration="330000" />
       <workItem from="1485281934620" duration="1219000" />
-      <workItem from="1485283166157" duration="17591000" />
+      <workItem from="1485283166157" duration="18428000" />
     </task>
     <servers />
   </component>
@@ -1217,7 +1223,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51257000" />
+    <option name="totallyTimeSpent" value="52094000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1226,35 +1232,35 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.4978678" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.4978678" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36619717" sideWeight="0.5090618" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36619717" sideWeight="0.5090618" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36619717" sideWeight="0.49093816" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36619717" sideWeight="0.49093816" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32827735" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827735" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23614073" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23614073" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20788912" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Regex Tester" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.4946695" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Regex Tester" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.4946695" order="13" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1279,12 +1285,6 @@
           <line>87</line>
           <properties class="belcer.remoteserverconnector.model.dao.oracle_impl.OracleConnector" method="saveUser" />
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/belcer/remoteserverconnector/controller/AdminController.java</url>
-          <line>82</line>
-          <properties />
-          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
       <option name="time" value="4" />
@@ -1687,8 +1687,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/belcer/remoteserverconnector/controller/AdminController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="82" column="58" lean-forward="true" selection-start-line="82" selection-start-column="58" selection-end-line="82" selection-end-column="58" />
+        <state relative-caret-position="1127">
+          <caret line="112" column="1" lean-forward="true" selection-start-line="112" selection-start-column="1" selection-end-line="112" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1701,10 +1701,12 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <last-edited>remote_server_connector:jar</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>

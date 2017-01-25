@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="remote_server_connector:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/remote_server_connector_jar</output-path>
+    <root id="archive" name="remote_server_connector.jar">
+      <element id="module-output" name="remote_server_connector" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/jbcrypt-0.3m.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/ftplet-api-1.1.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/ojdbc6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/ftpserver-core-1.1.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/commons-net-3.5.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
