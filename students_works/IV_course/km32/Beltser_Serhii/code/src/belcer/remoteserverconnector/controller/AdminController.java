@@ -48,9 +48,12 @@ public class AdminController {
         banned.setCellValueFactory(
                 new PropertyValueFactory<User, Byte>("banned"));
 
-        usersTable.getColumns().addAll(username,
-                email, password, registrationDate,
-                lastLogin, role, deleted, banned
+        usersTable.getColumns().addAll(
+//                username,
+//                email, password,
+                registrationDate
+//                ,
+//                lastLogin, role, deleted, banned
         );
         usersTable.getSelectionModel().selectedItemProperty().addListener((obs, oldSelection, newSelection) -> {
             if (newSelection != null
@@ -83,7 +86,7 @@ public class AdminController {
         User user = usersTable.getSelectionModel().getSelectedItem();
         boolean isUserBanned = user.getBanned() == 1;
         System.out.println("isUserBanned = " + isUserBanned);
-        user.setBanned((byte) (3));
+        user.setBanned((byte) (1));
 //        System.out.println("AdminController.ban: " + user);
 //        System.out.println(user.getBanned() == 0);
 
@@ -100,6 +103,9 @@ public class AdminController {
                 users = userDao.getAll().stream()
 //                        .filter(u -> u.getRole() != IS_ADMIN && u.getRole() != DB_ADMIN)
                         .collect(Collectors.toList());
+                System.out.println("Users in admin panel: ");
+                users.forEach(System.out::println);
+                System.out.println("---");
                 final ObservableList<User> usersObservableList =
                         FXCollections.observableArrayList(users);
                 usersTable.getItems().removeAll();

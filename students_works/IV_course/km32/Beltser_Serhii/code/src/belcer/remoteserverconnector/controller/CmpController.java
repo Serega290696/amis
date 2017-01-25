@@ -105,6 +105,9 @@ public class CmpController {
 
     public void deleteConnection() {
         System.out.println("CmpController.deleteConnection");
+        connectionDao.delete(FrontController.getUser().getUsername(),
+                (String) connectionsChoiceBox.getSelectionModel().getSelectedItem()
+        );
     }
 
     public void connectToChosenConnection() {

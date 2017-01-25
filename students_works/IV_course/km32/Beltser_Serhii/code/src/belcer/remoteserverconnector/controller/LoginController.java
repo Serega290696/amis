@@ -7,8 +7,10 @@ import belcer.remoteserverconnector.model.entity.User;
 import belcer.remoteserverconnector.model.utils.Utils;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
+import org.apache.ftpserver.command.impl.SYST;
 
 import java.sql.Date;
+import java.sql.Timestamp;
 
 public class LoginController {
     private UserDao userDao = new UserDaoImpl();
@@ -27,6 +29,12 @@ public class LoginController {
         if (user == null) {
             loginDataCorrect = false;
             System.err.println("Wrong username");
+        } else if (user.getBanned() != 0) {
+            loginDataCorrect = false;
+            System.err.println("User is banned");
+        } else if (user.getDeleted() != 0) {
+            loginDataCorrect = false;
+            System.err.println("User is deleted");
         } else if (!Utils.checkPassword(password, user.getPassword())) {
             loginDataCorrect = false;
             System.err.println("Wrong password");
@@ -35,7 +43,7 @@ public class LoginController {
         if (loginDataCorrect) {
             System.out.println("Login success");
             System.out.println("user = " + user);
-            user.setLastLogin(new Date(System.currentTimeMillis()));
+            user.setLastLogin(new Timestamp(System.currentTimeMillis()));
             new Thread(() -> userDao.update(user)).start();
 //      Main.INSTANCE.setStage(AppWindows.MAIN);
             FrontController.setUser(user);

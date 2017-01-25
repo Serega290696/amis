@@ -50,9 +50,11 @@ public class ConnectionProfileDaoOracleImpl implements ConnectionProfileDao {
   @Override
   public void saveOrUpdate(ConnectionProfile connectionProfile) {
     ConnectionProfile connection = connector.getConnection(connectionProfile.getTitle(), connectionProfile.getUsername());
+    System.out.println("ConnectionProfileDaoOracleImpl.saveOrUpdate: " + connection);
     if (connection == null) {
       connector.saveConnection(connectionProfile);
     } else {
+      System.out.println("connection = " + connection);
       connector.updateConnection(connectionProfile);
     }
   }

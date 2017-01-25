@@ -3,7 +3,6 @@ package belcer.remoteserverconnector.model.dao.oracle_impl;
 import belcer.remoteserverconnector.model.entity.ConnectionProfile;
 import belcer.remoteserverconnector.model.entity.Role;
 import belcer.remoteserverconnector.model.entity.User;
-import sun.reflect.annotation.EnumConstantNotPresentExceptionProxy;
 
 import javax.naming.NamingException;
 import java.sql.Connection;
@@ -18,11 +17,11 @@ import java.util.List;
 public class OracleConnector {
 //    INSTANCE,;
 
-    private final static String HOST = "localhost";
+    private final static String HOST = "77.47.134.131";
     private final static String PORT = "1521";
-    private final static String SCHEMA = "orcl";
+    private final static String SCHEMA = "xe";
     private final static String URL_SCHEMA = "jdbc:oracle:thin:@%1$s:%2$s/%3$s";
-    private final static String USER_LOGIN = "system";
+    private final static String USER_LOGIN = "sbeltser";
     private final static String USER_PASS = "root";
     private Connection conn;
 
@@ -62,7 +61,7 @@ public class OracleConnector {
         User user = null;
         try {
             ins = conn.prepareStatement("SELECT \"username\", \"email\", " +
-                    "\"password\", \"registration_date\", \"last_login\", \"role_title\" " +
+                    "\"password\", \"registration_date\", \"last_login\", \"role_title\", \"deleted\", \"banned\" " +
                     "FROM " + usersTable + " WHERE \"username\"=?");
             ins.setString(1, username);
             ResultSet resultSet = ins.executeQuery();
@@ -73,10 +72,10 @@ public class OracleConnector {
             user = new User(resultSet.getString(1),
                     resultSet.getString(2),
                     resultSet.getString(3),
-                    resultSet.getDate(4),
-                    resultSet.getDate(5),
-                    Role.parseString(resultSet.getString(6))
-            );
+                    resultSet.getTimestamp(4),
+                    resultSet.getTimestamp(5),
+                    Role.parseString(resultSet.getString(6)),
+                    resultSet.getInt(7), resultSet.getInt(8));
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
@@ -96,8 +95,8 @@ public class OracleConnector {
             ins.setString(1, user.getUsername());
             ins.setString(2, user.getEmail());
             ins.setString(3, user.getPassword());
-            ins.setDate(4, user.getRegistrationDate());
-            ins.setDate(5, user.getLastLogin());
+            ins.setTimestamp(4, user.getRegistrationDate());
+            ins.setTimestamp(5, user.getLastLogin());
             ins.setString(6, user.getRole().toString());
             ins.executeQuery();
         } catch (SQLException e) {
@@ -127,7 +126,7 @@ public class OracleConnector {
         List<User> users = new ArrayList<>();
         try {
             ins = conn.prepareStatement("SELECT \"username\", \"email\", " +
-                    "\"password\", \"registration_date\", \"last_login\", \"role_title\" FROM " + usersTable + "");
+                    "\"password\", \"registration_date\", \"last_login\", \"role_title\", \"deleted\", \"banned\" FROM " + usersTable + "");
             ResultSet resultSet = ins.executeQuery();
             if (!resultSet.isBeforeFirst()) {
                 return users;
@@ -136,10 +135,12 @@ public class OracleConnector {
                 users.add(new User(resultSet.getString(1),
                         resultSet.getString(2),
                         resultSet.getString(3),
-                        resultSet.getDate(4),
-                        resultSet.getDate(5),
-                        Role.parseString(resultSet.getString(6)
-                        )));
+                        resultSet.getTimestamp(4),
+                        resultSet.getTimestamp(5),
+                        Role.parseString(resultSet.getString(6)),
+                        resultSet.getInt(7),
+                        resultSet.getInt(8)
+                ));
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -169,8 +170,8 @@ public class OracleConnector {
             ins.setString(1, user.getUsername());
             ins.setString(2, user.getEmail());
             ins.setString(3, user.getPassword());
-            ins.setDate(4, user.getRegistrationDate());
-            ins.setDate(5, user.getLastLogin());
+            ins.setTimestamp(4, user.getRegistrationDate());
+            ins.setTimestamp(5, user.getLastLogin());
             ins.setString(6, user.getRole().toString());
             ins.setInt(7, user.getBanned());
             ins.setString(8, username);
