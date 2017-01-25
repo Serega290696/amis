@@ -10,7 +10,7 @@ import java.util.List;
 public class OracleConnectorTest {
   @Test
   public void getAllUsers() throws Exception {
-    List<User> allUsers = OracleConnector.INSTANCE.getAllUsers();
+    List<User> allUsers = new OracleConnector().getAllUsers();
     for (User user : allUsers) {
       System.out.println("user = " + user);
     }
@@ -18,13 +18,13 @@ public class OracleConnectorTest {
   @Test
   public void getAllUsers2() throws Exception {
     String username = "maya";
-    User user = OracleConnector.INSTANCE.getUser(username);
+    User user = new OracleConnector().getUser(username);
     System.out.println("user = " + user);
   }
   @Test
   public void getAllUsers3() throws Exception {
     String username = "dog";
-    List<ConnectionProfile> cons = OracleConnector.INSTANCE.getConnections(username);
+    List<ConnectionProfile> cons = new OracleConnector().getConnections(username);
     System.out.println("cons = " + cons);
   }
 

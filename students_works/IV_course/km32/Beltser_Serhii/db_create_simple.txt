@@ -1,0 +1,89 @@
+/*==============================================================*/
+/* DBMS name:      ORACLE Version 11g                           */
+/* Created on:     25.01.2017 2:19:45                           */
+/*==============================================================*/
+
+
+alter table "app_connection_profile"
+   drop constraint FK_APP_CONN_RELATIONS_APP_USER;
+
+alter table "app_user"
+   drop constraint FK_APP_USER_RELATIONS_APP_ROLE;
+
+drop index "Relationship_1_FK";
+
+drop table "app_connection_profile" cascade constraints;
+
+drop table "app_role" cascade constraints;
+
+drop index "Relationship_2_FK";
+
+drop table "app_user" cascade constraints;
+
+/*==============================================================*/
+/* Table: "app_connection_profile"                              */
+/*==============================================================*/
+create table "app_connection_profile" 
+(
+   "username"           VARCHAR2(200)        not null,
+   "title"              VARCHAR2(200)        not null,
+   "host"               VARCHAR2(400),
+   "port"               INTEGER,
+   "connection_user"    VARCHAR2(200),
+   "connection_pass"    VARCHAR2(200),
+   "protocol"           VARCHAR2(200),
+   "date_created"       DATE,
+   "date_modified"      DATE,
+   "last_connection_date" DATE,
+   "deleted"            SMALLINT,
+   "saved_by_user"      SMALLINT,
+   constraint PK_APP_CONNECTION_PROFILE primary key ("username", "title")
+);
+
+/*==============================================================*/
+/* Index: "Relationship_1_FK"                                   */
+/*==============================================================*/
+create index "Relationship_1_FK" on "app_connection_profile" (
+   "username" ASC
+);
+
+/*==============================================================*/
+/* Table: "app_role"                                            */
+/*==============================================================*/
+create table "app_role" 
+(
+   "role_title"         VARCHAR2(100)        not null,
+   constraint PK_APP_ROLE primary key ("role_title")
+);
+
+/*==============================================================*/
+/* Table: "app_user"                                            */
+/*==============================================================*/
+create table "app_user" 
+(
+   "username"           VARCHAR2(200)        not null,
+   "role_title"         VARCHAR2(100)        not null,
+   "email"              VARCHAR2(200),
+   "password"           VARCHAR2(400),
+   "registration_date"  DATE,
+   "last_login"         DATE,
+   "deleted"            SMALLINT,
+   "banned"             SMALLINT,
+   constraint PK_APP_USER primary key ("username")
+);
+
+/*==============================================================*/
+/* Index: "Relationship_2_FK"                                   */
+/*==============================================================*/
+create index "Relationship_2_FK" on "app_user" (
+   "role_title" ASC
+);
+
+alter table "app_connection_profile"
+   add constraint FK_APP_CONN_RELATIONS_APP_USER foreign key ("username")
+      references "app_user" ("username");
+
+alter table "app_user"
+   add constraint FK_APP_USER_RELATIONS_APP_ROLE foreign key ("role_title")
+      references "app_role" ("role_title");
+

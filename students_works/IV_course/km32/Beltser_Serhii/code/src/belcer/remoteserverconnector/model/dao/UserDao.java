@@ -7,7 +7,7 @@ import java.util.List;
 public interface UserDao {
   User get(String username);
 
-  List<User> getAll();
+  List<User> getAll() throws Exception;
 
   void delete(String username);
 

@@ -6,27 +6,27 @@ public class ConnectionProfile {
 
   private String title;
   private String host;
-  private String port;
+  private int port;
   private String connectionUser;
   private String connectionPass;
   private String protocol;
   private Date dateCreated;
   private Date dateModified;
   private Date lastConnectionDate;
-  private boolean deleted;
-  private boolean savedByUser;
+  private int deleted;
+  private int savedByUser;
   private String username;
 
-  public ConnectionProfile(String title, String host, String port, String connectionUser, String connectionPass, String protocol, boolean savedByUser, String username) {
+  public ConnectionProfile(String title, String host, int port, String connectionUser, String connectionPass, String protocol, int savedByUser, String username) {
     this(title, host, port, connectionUser, connectionPass, protocol, new Date(System.currentTimeMillis()), new Date(System.currentTimeMillis()), null,
-        false, savedByUser, username);
+        0, savedByUser, username);
   }
 
   public ConnectionProfile(String title,
-                           String host, String port, String connectionUser, String connectionPass, String protocol,
+                           String host, int port, String connectionUser, String connectionPass, String protocol,
                            Date dateCreated, Date dateModified, Date lastConnectionDate,
-                           boolean deleted,
-                           boolean savedByUser, String username) {
+                           int deleted,
+                           int savedByUser, String username) {
     this.title = title;
     this.host = host;
     this.port = port;
@@ -57,11 +57,11 @@ public class ConnectionProfile {
     this.host = host;
   }
 
-  public String getPort() {
+  public int getPort() {
     return port;
   }
 
-  public void setPort(String port) {
+  public void setPort(int port) {
     this.port = port;
   }
 
@@ -121,15 +121,15 @@ public class ConnectionProfile {
     this.lastConnectionDate = lastConnectionDate;
   }
 
-  public boolean isDeleted() {
+  public int isDeleted() {
     return deleted;
   }
 
-  public void setDeleted(boolean deleted) {
+  public void setDeleted(int deleted) {
     this.deleted = deleted;
   }
 
-  public boolean isSavedByUser() {
+  public int isSavedByUser() {
     return savedByUser;
   }
 

@@ -10,13 +10,13 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="286.0" prefWidth="607.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="belcer.remoteserverconnector.controller.CmpController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="286.0" prefWidth="607.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="belcer.remoteserverconnector.controller.CmpController">
    <children>
       <HBox alignment="CENTER_RIGHT" layoutX="184.0" layoutY="238.0" prefHeight="31.0" prefWidth="397.0" spacing="10.0">
          <children>
             <Button mnemonicParsing="false" onAction="#cancel" prefHeight="32.0" prefWidth="107.0" text="Cancel" />
             <Button mnemonicParsing="false" onAction="#connectToChosenConnection" prefHeight="32.0" prefWidth="107.0" text="Connect" />
-            <Button defaultButton="true" mnemonicParsing="false" onAction="#save" prefHeight="32.0" prefWidth="97.0" text="Save changes" />
+            <Button fx:id="saveChangesButton" defaultButton="true" disable="true" mnemonicParsing="false" onAction="#save" prefHeight="32.0" prefWidth="97.0" text="Save changes" />
          </children>
       </HBox>
       <HBox alignment="CENTER_LEFT" layoutX="15.0" layoutY="14.0" prefHeight="25.0" prefWidth="586.0" spacing="10.0">

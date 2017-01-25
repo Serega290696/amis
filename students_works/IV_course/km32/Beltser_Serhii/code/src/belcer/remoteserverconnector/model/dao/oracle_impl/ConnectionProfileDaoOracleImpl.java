@@ -7,7 +7,7 @@ import java.util.List;
 
 public class ConnectionProfileDaoOracleImpl implements ConnectionProfileDao {
 
-  private OracleConnector connector = OracleConnector.INSTANCE;
+  private OracleConnector connector = new OracleConnector();
 
   @Override
   public ConnectionProfile get(String title, String username) {

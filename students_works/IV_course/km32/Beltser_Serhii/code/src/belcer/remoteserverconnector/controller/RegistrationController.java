@@ -45,7 +45,7 @@ public class RegistrationController {
     if (registrationDataCorrect) {
       System.out.println("Registration data is OK");
       User newUser = new User(username, email, Utils.hashPassword(pass), Role.USER);
-      userDao.save(newUser);
+      new Thread(() -> userDao.save(newUser)).start();
       User savedUser = userDao.get(username);
       System.out.println("savedUser = " + savedUser);
       FrontController.setUser(savedUser);

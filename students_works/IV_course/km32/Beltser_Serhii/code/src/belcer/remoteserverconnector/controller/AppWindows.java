@@ -5,4 +5,5 @@ public enum AppWindows {
   LOGIN,
   SIGNUP,
   CREATE_CONNECTION,
+  ADMIN_PANEL,
 }

@@ -6,13 +6,13 @@ import belcer.remoteserverconnector.model.entity.User;
 import java.util.List;
 
 public class UserDaoImpl implements UserDao {
-  OracleConnector connector = OracleConnector.INSTANCE;
+  OracleConnector connector = new OracleConnector();
 
   public User get(String username) {
     return connector.getUser(username);
   }
 
-  public List<User> getAll() {
+  public List<User> getAll() throws Exception {
     return connector.getAllUsers();
   }
 
@@ -21,6 +21,7 @@ public class UserDaoImpl implements UserDao {
   }
 
   public void save(User user) {
+    System.out.println("UserDaoImpl.save: "+ user);
     connector.saveUser(user);
   }
 

@@ -10,20 +10,23 @@ public class User {
   private Date registrationDate;
   private Date lastLogin;
   private Role role;
+  private byte deleted;
+  private byte banned;
 
   public User(String username, String email, String password, Role role) {
     this(username, email, password, new Date(System.currentTimeMillis()), null, role);
   }
 
   public User(String username, String email, String password, Date registrationDate, Date lastLogin, Role role) {
+//    System.out.println("New user cteated: " + username + ", " + email + ", " + password);
     this.username = username;
-    System.out.println("email = " + email);
-    System.out.println("password = " + password);
     this.email = email;
     this.password = password;
     this.registrationDate = registrationDate;
     this.lastLogin = lastLogin;
     this.role = role;
+    this.deleted = 0;
+    this.banned = 0;
   }
 
 
@@ -75,14 +78,33 @@ public class User {
     this.lastLogin = lastLogin;
   }
 
+  public byte getDeleted() {
+    return deleted;
+  }
+
+  public void setDeleted(byte deleted) {
+    this.deleted = deleted;
+  }
+
+  public byte getBanned() {
+    return banned;
+  }
+
+  public void setBanned(byte banned) {
+    this.banned = banned;
+  }
+
   @Override
   public String toString() {
     return "User{" +
-        "username='" + username + '\'' +
-        ", email='" + email + '\'' +
-        ", password='" + password + '\'' +
-        ", registrationDate=" + registrationDate +
-        ", lastLogin=" + lastLogin +
-        '}';
+            "username='" + username + '\'' +
+            ", email='" + email + '\'' +
+            ", password='" + password + '\'' +
+            ", registrationDate=" + registrationDate +
+            ", lastLogin=" + lastLogin +
+            ", role=" + role +
+            ", deleted=" + deleted +
+            ", banned=" + banned +
+            '}';
   }
 }
